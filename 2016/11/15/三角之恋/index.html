@@ -21,6 +21,16 @@
   <title>三角之恋-《蓝色大门》观后 [ This is my life ]</title>
   
   
+    <link rel="shortcut icon" href="/life/favicon.ico">
+  
+  
+  <link rel="stylesheet" href="/life/css/random.css">
+<link rel="stylesheet" href="/life/css/vegas.min.css">
+<link rel="stylesheet" href="/life/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/life/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/life/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/life/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/life/css/plyr.css">
   
 </head>
 
@@ -54,13 +64,55 @@
       <div id="brand">
         
         <a onClick="openUserCard()">
-          <img id="avatar" src=""/>
+          <img id="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg"/>
           <div id="homelink">This is my life</div>
         </a>
       </div>
       <div id="menu-list">
         <ul>
         
+        
+          
+            <li>
+          
+            <a href="/life/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/life/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/life/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/life/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/life/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
+            
+          </li>
         
         </ul>
       </div>
@@ -77,9 +129,9 @@
   <article id="post">
     <h1>三角之恋-《蓝色大门》观后</h1>
     <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2016-11-15</span>
+      <span id = "post-title-date">撰写于 2016-11-15</span>
       
-        <span id = "post-title-updated">Updated at 2016-11-15</span>
+        <span id = "post-title-updated">修改于 2016-11-15</span>
       
       
       
@@ -89,10 +141,10 @@
 
   </article>
   <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
-    <h2>Table of Content</h2>
+    <h2>目录</h2>
     
   </div>
 </div>
@@ -100,13 +152,13 @@
   
 <nav id="pagination">
   
-    <a href="/life/2016/11/15/好笑，引人入胜/" class="prev">&larr; Prev post 好笑，引人入胜《忽然遇见你》观后</a>
+    <a href="/life/2016/11/15/好笑，引人入胜/" class="prev">&larr; 上一篇 好笑，引人入胜《忽然遇见你》观后</a>
   
 
   
 
   
-    <a href="/life/2016/11/15/人性在这里得到了深刻的体现/" class="next">Next post 人性在这里得到了深刻的体现（人在旅途观后） &rarr;</a>
+    <a href="/life/2016/11/15/人性在这里得到了深刻的体现/" class="next">下一篇 人性在这里得到了深刻的体现（人在旅途观后） &rarr;</a>
   
 </nav>
 
@@ -137,44 +189,123 @@
 
 <div id="user-card">
   <div class="center-field">
-    <img class="avatar" src="">
+    <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
     <p id="description"></p>
     <ul class="social-icon">
   
+  
+    <li>
+      <a href="https://github.com/stiekel/hexo-theme-random">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://coding.net/u/Stiekel">
+        
+          <i class="icon iconfont coding">&#xe607;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://twitter.com/SidCN">
+        
+          <i class="icon iconfont twitter">&#xe600;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://weibo.com/sidcn">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://www.douban.com/people/Stiekel/">
+        
+          <i class="icon iconfont douban">&#xe60f;</i>
+        
+      </a>
+    </li>
   
 </ul>
   </div>
 </div>
 
 
+<div id="btn-view">Hide</div>
+
 <script>
 // is trigger analytics / tongji script
 var isIgnoreHost = false;
 
 if(window && window.location && window.location.host) {
-  isIgnoreHost = "".some(function(address){
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
     return 0 === window.location.host.indexOf(address);
   });
 }
 
-var isTriggerAnalytics = !( "" && isIgnoreHost );
+var isTriggerAnalytics = !( true && isIgnoreHost );
 
 </script>
 
 
 
 
+  
+  
+    <script src="/life/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/life/js/vegas.min.js"></script>
+  
+    <script src="/life/js/random.js"></script>
+  
+    <script src="/life/js/highlight.pack.js"></script>
+  
+    <script src="/life/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/life/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/life/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/life/js/plyr.js"></script>
+  
+
 <script>
 
-var vegasConfig = "";
-var unsplashConfig = "";
+  // fancybox
+  var backgroundImages = [];
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
 // is show background images
 var turnoffBackgroundImage = false;
 
 
 
+  turnoffBackgroundImage = true;
 
-var backgroundColor = "";
+
+var backgroundColor = "34495E";
 
 $(".fancybox-thumb").fancybox({
   prevEffect: 'none',
