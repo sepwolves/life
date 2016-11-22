@@ -6,31 +6,21 @@
 
 
 <!doctype html>
-<html lang="">
+<html lang="zh-Hans">
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Andy Tong">
   
   
   
   
     <meta name="description" content="很早就听说这部片子拍得很好，很真实。真正打动我的，是知乎上一些缉毒警对这部片子的评价：真实！对张涵予和彭于晏的评价也很高，于是选择了这部电影观看。可能我对血腥的场面很不敏感。别人看了会恶心的场面，我毫无动容。在那十三具尸体被打捞上来的时候，我的身体并没有感觉有什么不适。我也没有觉得这些场面有怎么冲击我的大脑或者我的心胸。但是这并不能排除这部片子的某些地方让我动容，甚至让我湿润，我甚至在有些地...">
   
-  <title>非主旋律的主旋律 [ Hexo ]</title>
+  <title>非主旋律的主旋律 [ This is my life ]</title>
   
   
-    <link rel="shortcut icon" href="/life/favicon.ico">
-  
-  
-  <link rel="stylesheet" href="/life/css/random.css">
-<link rel="stylesheet" href="/life/css/vegas.min.css">
-<link rel="stylesheet" href="/life/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/life/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/life/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/life/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/life/css/plyr.css">
   
 </head>
 
@@ -64,55 +54,13 @@
       <div id="brand">
         
         <a onClick="openUserCard()">
-          <img id="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg"/>
-          <div id="homelink">Hexo</div>
+          <img id="avatar" src=""/>
+          <div id="homelink">This is my life</div>
         </a>
       </div>
       <div id="menu-list">
         <ul>
         
-        
-          
-            <li>
-          
-            <a href="/life/index.html">Home</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/life/archives">Archives</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/life/tags">Tags</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/life/categories">Categories</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/life/about">About</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
-            
-          </li>
         
         </ul>
       </div>
@@ -175,7 +123,7 @@
 
   <div id="bottom-outer">
     <div id="bottom-inner">
-      Site by John Doe using
+      Site by Andy Tong using
       <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
       <br>
       
@@ -189,123 +137,44 @@
 
 <div id="user-card">
   <div class="center-field">
-    <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
+    <img class="avatar" src="">
     <p id="description"></p>
     <ul class="social-icon">
   
-  
-    <li>
-      <a href="https://github.com/stiekel/hexo-theme-random">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://coding.net/u/Stiekel">
-        
-          <i class="icon iconfont coding">&#xe607;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://twitter.com/SidCN">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://weibo.com/sidcn">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/Stiekel/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
   
 </ul>
   </div>
 </div>
 
 
-<div id="btn-view">Hide</div>
-
 <script>
 // is trigger analytics / tongji script
 var isIgnoreHost = false;
 
 if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+  isIgnoreHost = "".some(function(address){
     return 0 === window.location.host.indexOf(address);
   });
 }
 
-var isTriggerAnalytics = !( true && isIgnoreHost );
+var isTriggerAnalytics = !( "" && isIgnoreHost );
 
 </script>
 
 
 
 
-  
-  
-    <script src="/life/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/life/js/vegas.min.js"></script>
-  
-    <script src="/life/js/random.js"></script>
-  
-    <script src="/life/js/highlight.pack.js"></script>
-  
-    <script src="/life/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/life/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/life/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/life/js/plyr.js"></script>
-  
-
 <script>
 
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-var unsplashConfig = {"gravity":"north"};
+var vegasConfig = "";
+var unsplashConfig = "";
 // is show background images
 var turnoffBackgroundImage = false;
 
 
 
-  turnoffBackgroundImage = true;
 
-
-var backgroundColor = "34495E";
+var backgroundColor = "";
 
 $(".fancybox-thumb").fancybox({
   prevEffect: 'none',
