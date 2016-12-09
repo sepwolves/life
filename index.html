@@ -1,244 +1,1714 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="zh-Hans">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   
-  <meta name="author" content="Andy Tong">
+  <title>我的生活</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="各种生活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="我的生活">
+<meta property="og:url" content="https://sepwolves.github.io/life/index.html">
+<meta property="og:site_name" content="我的生活">
+<meta property="og:description" content="各种生活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的生活">
+<meta name="twitter:description" content="各种生活">
+  
+    <link rel="alternative" href="/atom.xml" title="我的生活" type="application/atom+xml">
   
   
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/life/css/style.css">
   
   
-    <meta name="description" content="">
-  
-  <title> [ This is my life ]</title>
-  
-  
-    <link rel="shortcut icon" href="/life/favicon.ico">
-  
-  
-  <link rel="stylesheet" href="/life/css/random.css">
-<link rel="stylesheet" href="/life/css/vegas.min.css">
-<link rel="stylesheet" href="/life/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/life/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/life/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/life/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/life/css/plyr.css">
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
   
 </head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
 
-<div class="random-center hide-area">
-  <div id="random-index">
-    <div class="center-field">
-      <img class="avatar" src="http://img.hb.aicdn.com/eb11325b7d4a2cc41c30d96e10b27ccb7c88816b89a0-S1a2q6_fw658" width=120 height=120 onClick="openUserCard()">
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Andy Tong</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">这是我的生活</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/life/">主页</a></li>
+				        
+							<li><a href="/life/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/life/tags/回忆录/" style="font-size: 13.33px;">回忆录</a> <a href="/life/tags/影评/" style="font-size: 20px;">影评</a> <a href="/life/tags/时事/" style="font-size: 10px;">时事</a> <a href="/life/tags/游记/" style="font-size: 16.67px;">游记</a> <a href="/life/tags/电脑/" style="font-size: 10px;">电脑</a> <a href="/life/tags/知乎/" style="font-size: 10px;">知乎</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/winnerweb/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
     </div>
-    <div class="center-field">
-      <div class="title" onClick="openUserCard()">This is my life</div>
-      <div class="sub-title" onClick="openUserCard()"></div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Andy Tong</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Andy Tong</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">这是我的生活</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/life/">主页</a></li>
+		        
+					<li><a href="/life/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-第三十六个故事" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/22/第三十六个故事/" class="article-date">
+  	<time datetime="2016-11-22T08:43:35.000Z" itemprop="datePublished">2016-11-22</time>
+</a>
     </div>
-    <hr >
-    <div class="center-field">
-      <ul class="index-nav-link">
-        
-        
-          
-            <li><a href="/life/index.html">Home</a></li>
-          
-        
-          
-            <li><a href="/life/archives">Archives</a></li>
-          
-        
-          
-            <li><a href="/life/tags">Tags</a></li>
-          
-        
-          
-            <li><a href="/life/categories">Categories</a></li>
-          
-        
-          
-            <li><a href="/life/about">About</a></li>
-          
-        
-      </ul>
-      <ul class="social-icon">
   
-  
-    <li>
-      <a href="https://twitter.com/sepwolves">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          <i class="icon iconfont twitter">&#xe600;</i>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/22/第三十六个故事/">
+        第三十六个故事
         
       </a>
-    </li>
+    </h1>
   
-    <li>
-      <a href="http://weibo.com/adtpku">
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>其实我几年前曾经看过这部电影的，但是还是有很多情节都忘记了。直到看到撞车，看到海芋，我才确定，嗯，这不是我第一次看这电影。</p>
+<p>但是我还是很喜欢这部电影。很小清新。有意思的是：我只记得监制是侯孝贤，却不记得谁是导演。</p>
+<p>它真的蛮小清新的。我们可以感觉到每个演员的台词都是如此的自然，就好像不是在拍电影，就是在现实当中说话一样。同样会出现这样那样的口误，停顿，等。这种感觉会让人觉得很亲切。</p>
+<p>妈妈的角色很有意思。她其实是在扮演着某种穿针引线的角色。一开始是从卓恩朵的口中出现，要求卓恩朵必须要接受卓恩蔷在这里工作。虽然卓恩朵并不情愿。——全片看下来我一直不知道卓恩蔷到底有哪里会让卓恩朵头痛的地方，但是朵儿就是说，你最有本事让我头痛啦。有一条线索很有意思：妈妈总是会在给女儿说话的时候，让身边的其他人误会是跟他们说话，每回都要解释一遍。我没有搞清楚导演这么做的道理是什么。</p>
+<p>朵儿要拥有一个自己的咖啡馆。咖啡馆看上去真的蛮大的。还蛮有特色的。她的朋友们给她送了一大堆没有用的东西。我看到这里的时候就会在想：我要是也能开一个咖啡馆就好了，我也可以把我自己的创意灌输在这里。其实咖啡馆本身的作用，我以为并不是在喝咖啡本身啦。更多的时候，咖啡馆其实只是提供一个让更多人在这里聚会的场所。比如说我们约人聊天的时候，不是经常会去咖啡馆嘛。但是除了聊天之外呢，我们是不是应该找到另外一些更有趣的东西呢？而朵恩蔷推出的『以物换物』的活动，很显然增加了咖啡馆的一个特色。增加了客人。我对朵恩蔷骑着脚踏车到处去送传单的场景特别有感觉，因为我觉得那很有特色。</p>
+<p>导演的手法蛮有意思的。他会隔一段时间就会在屏幕上打出一个问题，然后找几个群众，问他们的答案。我觉得那应该是在街上随机找的吧，还有的人甚至语塞，一句话也没说。还有很多人的口音很重，甚至有的人直接就说台语。里面还有一个场景是两个卓恩朵，是对那个副机师拿走他的画有没有表示不满的争论。是卓恩朵内心世界的一种斗争吧。</p>
+<p>卓恩蔷大概很能编，在给空中小姐说故事的时候，说父亲临走的时候给他们留了一笔钱。然后让他们两姐妹抽签，分别是『读书』与『环游世界』。其实这个不就是『读万卷书，行万里路』的古语的另一种表现形式嘛。卓恩朵很会读书，读到很高，然后故事里的卓恩蔷就导出去环游世界。实际上两个人都读过大学。卓恩蔷还是读商科的。但是卓恩朵读得很苦，读到青春痘到处都是，没有男生搭理她。然后卓恩朵就好想去环游世界，到了最后航空公司的人们找到她的时候，表示要投资他们的咖啡店的时候，她就用自己对咖啡店的股权来换取他们的飞机票。</p>
+<p>这部电影其实不会告诉你太多道理，比如说是读书好还是行万里路好。但是它很清新，就是让你看了很舒服的感觉。桂纶镁的表现很细致，我很仔细的去观察她的每个表情，都是很恰如其分的符合当时的场景。</p>
+<p>因此，我很喜欢这部电影。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-庆安枪击事件" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/21/庆安枪击事件/" class="article-date">
+  	<time datetime="2016-11-21T09:06:19.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          <i class="icon iconfont weibo">&#xe602;</i>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/21/庆安枪击事件/">
+        庆安枪击事件
         
       </a>
-    </li>
+    </h1>
   
-    <li>
-      <a href="http://www.douban.com/people/1353608/">
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>对庆安枪击事件大概进行了两方面的了解。一个是优酷上公布的视频，另一个是youtube上屠夫对当事人的采访。两者的出入并不大。作为对此事件进行分析的主要依据我认为是可靠的。<br>对这件事的结论我的判断是：枪击是合理的，也是必要的。当事人分明受到了警告的前提下，仍然没有降服，那么接下来的命运就只能自己承担。<br>对很多事情我们并不了解。我们不知道为什么徐纯合为什么要去堵住大门，不让旅客进入。也许媒体对此进行了蓄意隐瞒。但无论作为当事人的你受到怎样的不公伤害，你都没有理由去侵害第三者的利益，永远都没有。你阻止其他旅客进站一定是不对的，警察对此进行干预也定然是合理的。<br>由于公开的视频是剪辑，我们的确不知道为什么徐纯合后来火气那么大，冲向警务室拼命的踹门。警察试图用防暴棍对他进行制服的时候，都未能成功。甚至被夺去防暴棍。可以很明确的是，警察受到了防暴棍的攻击。警察是一个很特殊的身份，作为执法者的警察我认为是有权利维护自身的合理利益的，因为警察本身是时刻处于危险当中，再加上警察手中有枪。如果这个时候徐纯合击倒了警察，并夺取了枪支。（当然我们可以说当时徐纯合毫无夺枪意图，可是你在袭警啊，你在用棍子殴打警察啊，谁能保证你把警察击倒之后不会夺枪呢？既然棍子可以夺，枪自然也能夺了。）那么后果很难想象。<br>徐纯合背后是怎么样一个人，这一点都不重要。重要的是在整个事件中他的表现。我们的确看到了他的怨气。但是同时我们也看到了他罔顾亲人，甚至拿亲人当挡箭牌的事实。从这点上来说他的人品是有严重问题的。他第一度拿他母亲当挡箭牌，第二度更是抓住女儿掼到了地上。我不知道他是出于什么样的理由，会对亲人采用如此恶劣的手段</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/时事/">时事</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-共产主义的伸缩" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/21/共产主义的伸缩/" class="article-date">
+  	<time datetime="2016-11-21T09:05:50.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          <i class="icon iconfont douban">&#xe60f;</i>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/21/共产主义的伸缩/">
+        共产主义的伸缩
         
       </a>
-    </li>
+    </h1>
   
-</ul>
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近正好看到一个评论，事实对近期社会现象的总结，有点意思。</p>
+<p>该评论认为，共产主义的政策有一个不变的特征，就是它总是处于一个伸缩的状态。在伸的状态下，它派余粮收集队，直接消灭一切似有财产。然后它发现这样不行了，又开始执行新经济政策，财富又开始增长。财富足够多了，不需要你了。再来就是集体农庄。然后再在二战当中 搞统一战线，一轮一轮的折腾。</p>
+<p>目前我们的社会体制，在当下来说是在缩的一个阶段。很多人认为在经历改革开放30年之后，政策似乎变得只能伸，不能缩了。我想这是犯了政治幼稚病，是一种严重的错觉。最近的政策特征是非常典型的缩。我们必须要坚定的以国家利益为第一位，消灭一切个人私欲。</p>
+<p>这个是大周期决定的。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Win7的神模式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/21/Win7的神模式/" class="article-date">
+  	<time datetime="2016-11-21T09:05:37.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/21/Win7的神模式/">
+        Win7的神模式
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>偶然间在Quora上看到的，方法如下：</p>
+<pre><code>新建文件夹（任意处）；
+改名为『GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}』
+回车
+</code></pre><p>Godmode出现。包含了win7的一系列设置选项。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/电脑/">电脑</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-有话好好说" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/21/有话好好说/" class="article-date">
+  	<time datetime="2016-11-21T09:05:17.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/21/有话好好说/">
+        有话好好说
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>戾气，几乎是人类的本能。网上很多的争吵，本质上，都是网民戾气太重所致。</p>
+<p>所以，知乎推出了友善度这一工具。对此我表示了强烈的赞成态度。</p>
+<p>你的观点正确与否不是最重要的，你在知乎这块土地上，你对于其他用户的尊重与否才是最重要的。如果你不尊重他人，那么不管你的观点有多么正确，你被官方处理都是再合情合理不过。</p>
+<p>最近有一个问题，是关于警察刑讯逼供问题。一个警察谈及了往事：说有个案子非常难审，新警察怎么审，嫌疑人就是不招。结果来了一个老警察，把鞋子一脱，眯着眼睛就打起了瞌睡。嫌疑人终于忍受不了脚臭而招供。评论下方就出现了『刑讯逼供』的叫法。</p>
+<p>但是关键是：我迄今都不敢断定说他到底是调侃，还是很一本正经的在说这个问题。如果说是认真的，他在后面的评论当中并没有对此作出解释。只是单纯的喊『刑讯逼供』自然引起一群人的不服。有些人，当然就发表了一些违禁言论。当然这些人的言论，一部分在我的举报下，被官方删除。</p>
+<p>即便是我同意的观点，我同意的立场，我也很难容忍在网络上的这种人身攻击行为，一定要举报。</p>
+<p>我就不明白了：你觉得自己有道理，为什么就不能好好说话？好好的摆事实讲道理？一上来就骂人，就攻击人，显得你多么的牛逼是不？都占领道德制高点了，还怕个蛋蛋哪，给我骂！</p>
+<p>因为观点不同，而产生的人身攻击是最没有意义和价值的了。</p>
+<p>当观点不同的时候，正是我们去拓宽我们的思路，去开阔我们视野的时候，如果你可以摆着一个平心静气的态度，那么不同观点的碰撞，激荡才变得有可能。相反，如果想也不想，上来就给人家乱扣帽子，就以为自己如何正确无比，那么整个的网站讨论氛围就会因此变坏。不同思想不同观点的人只会各自封闭。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/知乎/">知乎</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-守规则，知敬畏" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/21/守规则，知敬畏/" class="article-date">
+  	<time datetime="2016-11-21T09:04:57.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/21/守规则，知敬畏/">
+        守规则，知敬畏
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>东莞押钞人击毙砸车人的新闻，在网上谈了非常多了。我想说说我的看法。一孔之见，不一定正确。</p>
+<p>我想说，每个人在社会上，都应该有正确的处理问题的方式，要遵守规则，要敬畏规则，否则遭遇悲剧是不可避免的事情。</p>
+<p>押钞车是一种非常敏感的车辆。这和其他车辆是很不一样的。上面是坐了好几名持枪的人。我每次在路上经过银行的时候，看到那些持枪者，我都会有所忐忑。我不知道这个黄先生为什么把在愤怒的刺激下，把恐惧丢在了一边呢？他为什么就那么坚定的能够相信那些枪支就是用来吓唬人的呢？是的，你可以相信他们只是吓唬人的，可是你要为自己的行为负责。</p>
+<p>其实马路上很多人都是这样想当然的。闯红灯，不怕，反正车子会让着我，它不敢碾我。电动车上高架，也是堂而皇之，丝毫不知道害怕和敬畏。我在想，如果整个社会，还是要为这些不知敬畏规则的人说话的话，那么我们这个社会永远，永远不可能懂得什么叫作遵守规则，永远永远不可能进化。</p>
+<p>细节问题不用细谈了。从我不成熟的观点来看，我觉得持枪人开枪是天公地道的。不然他们遭遇生命风险的时候，谁来给他们背锅？凭什么要人去为这些不遵守规则的人背锅？没有道理。『善有善报恶有恶报』每个人说话要有良心，要用良心在说话。</p>
+<p>生命是很重要，但你的生命重要，人家的生命就不重要？你在威胁他人生命安全的时候，还不允许人家来捍卫自己的生命安全？众生平等，阿门！ </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-好笑，引人入胜" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/15/好笑，引人入胜/" class="article-date">
+  	<time datetime="2016-11-15T08:13:32.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/15/好笑，引人入胜/">
+        好笑，引人入胜《忽然遇见你》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我完全是因为卡琳娜·卡普才找到的这部电影。卡琳娜·卡普是《3 idiots》的女主角。（女主角？只是唯一一个女性角色吧？貌似戏份也不算太多？）然后就喜欢上了这个女星。<br>但是我真的没想到，一开始她的这个角色其实挺招我烦的。艾迪特跟她萍水相逢，她口若悬河的不断在他面前神神叨叨的说，最后艾迪特因为受不了她，径自下了火车。她却自己赶下来要催他上车，结果却把自己给耽误了。艾迪特好不容易开快车把她送到了下一站，她却因为喝水又一次耽误了行程。诚如艾迪特所说，她就是在不断的制造问题制造麻烦。她从来不会把时间的先后逻辑顺序联想清楚：我为什么要那样做，我那样做的后果是什么？总是想到哪里就去做哪里，不管后果是不是自己所预期的。在小旅店那一个片段，她就做了如此危险的事情。虽然她说她会空手道，可是如果艾迪特就是用心不良呢，她能怎么办？（话说小旅店的那个前台的表情非常有意思，演的活灵活现）<br>我非常不喜欢这样的脾气和性格，因为这种习惯无疑要给自己和身边的人带来这样那样的伤害。反过来，艾迪特就理性得多——虽然他是一个不折不扣的音乐家，（他同时还是一个大公司的掌舵人）似乎应该感性多一些才对。至少在吉特要逃离家门的时候，艾迪特告诉她要往回跑，而不是往外跑。吉特就缺乏这样的智慧。<br>其实吉特的家庭条件也很好：从他们家的环境布置就可以看出来：这是一个大户啊。应该也是蛮有钱的吧。<br>吉特的确是给了艾迪特第二次生命：当艾迪特在火车上就要轻生的时候，是吉特及时阻止了他。所以艾迪特说她给了他第二次生命一点都不为过。<br>印度果然也有白人。比如像艾迪特，仔细看会发现他其实很白。印度的不同人种色差还是比较大的。<br>吉特的妹妹还是没有她好看，颜值至少要下跌一个数量级。<br>我一直没想明白一件事：为什么印度人的电影里总是要放无数的歌舞呢。这样做到底可以起到什么样的效果呢？<br>安淑曼这个角色的疑点非常多：首先片中一直没有交代安淑曼和吉特是怎么认识的，我们根本不知道两个人的关系到底怎么样，为什么吉特会完全没有在和安淑曼商量的情况下就敢离家出走，甚至敢号称说要私奔，结果临了却把安淑曼吓到；其次两个人的距离非常远，为什么会发展出一段这么深厚的感情，以致于吉特在最开始还信誓旦旦的说：我一辈子就只有一个男人，那就是安淑曼。（话说艾迪特和他前女友的故事，片中也没有交代清楚。艾迪特那么有钱，为什么前女友要舍他而去？艾迪特身上到底有什么她难以忍受的毛病或者缺点呢？至少在片中看来，他有很多优点啊，很温柔，善解人意。而且，关键是很聪明，有很多点子）。安淑曼嫌弃吉特幼稚，为什么最后还要跑回来追赶吉特呢？<br>艾迪特也是，明明自己非常喜欢吉特，也向吉特承认过自己的感情，可是当机会出现在眼前的时候，他还是要把吉特让给安淑曼。安淑曼的确是个人渣啊，把吉特一个人赶走，孤零零的，也不怕发生什么意外。（实际上，在吉特第二次被火车落下的时候，就已经显现出在印度一个单身女人的危险了。有那么多男人垂涎欲滴）<br>吉特前后的变化非常大。至少在被安淑曼拒绝之后，她整个人就不再是那么叽叽喳喳，幼稚得不行了。整个人阴郁了很多。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-三角之恋" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/15/三角之恋/" class="article-date">
+  	<time datetime="2016-11-15T08:13:16.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/15/三角之恋/">
+        三角之恋-《蓝色大门》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>直到剧情发展到很后面，我才幡然醒悟这部电影要表达的是什么。<br>爱情。<br>青春期的爱情。<br>青春期的同性之爱。<br>还有异性之爱。<br>这真的是一个完美的三角之恋。<br>孟克柔爱着林月珍，甚至愿意为她做任何事情，包括帮她去追她所喜欢的男生。虽然林月珍真的很普通，有一点点羞涩，智商很平庸。<br>林月珍爱着张士豪，帅气的小男生，又会游泳又会吉他。收藏一切张士豪的东西，包括篮球、球鞋、还有用废的原子笔，等等。青春期的孩子用这种方式来表达爱情是再典型不过了。<br>可是张士豪却爱着孟克柔。甚至跑到孟克柔妈妈的摊子上去吃饭，希望孟克柔能够来看他的比赛。他希望孟克柔如果开始喜欢男人的那一刻，一定要先告诉他啊。<br>多么完美的三角恋爱，多么完美的一个闭环，你爱着我，我爱着他，他却爱着你。<br>这部电影，会让人勾起许多青春的回忆，虽然这里面的爱情其实并非典型。（至少在公开场合，同性恋都非常少吧） </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-人性在这里得到了深刻的体现" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/15/人性在这里得到了深刻的体现/" class="article-date">
+  	<time datetime="2016-11-15T08:13:07.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/15/人性在这里得到了深刻的体现/">
+        人性在这里得到了深刻的体现（人在旅途观后）
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这部电视剧大概是我在小学三四年级的时候看的。当时刚刚开始要晚修，我们傍晚回家正好赶上6点-7点的电视剧。留下来的印象最深的莫过于那首主题曲，甚至在晚修的课上也会轻轻哼起这首歌。<br>如果没有重新再看，那么我记忆最深的就是办理满汉全席这件事。虽然最后这件事失败了，当时是觉得很重要的样子。<br>我觉得剧中最为正面的人物是黄自勤。他忠于职守，哪怕在整个酒店上下都污浊不堪的背景下，他仍然保持清白。<br>苔梨园的老板朱承简直是活该。没有识人之明，是非不分，一味的试图和员工讲感情。其实当你和邪恶势力讲感情的时候，你不可避免的就站在了正直势力的对立面。最后的下场也很悲惨，直接死在了大街上，甚至死无葬身之地。<br>倩云是一个非常要强的女性角色，从底层一直往上做。最后好像是做到了酒店高层。可惜很遗憾的是，她太看重事业，甚至忽视了自己男朋友杜嘉南的感受。<br>杜嘉南的性格有点阴柔。这也许是他和倩云不搭调的地方。倩云太强势。两个人即便最后在一起了，也可能不会太幸福。<br>康俐就是太蠢了，何苦要对一个男人这么好。你应该早就知道江天文不是自己的菜，趁早把他给蹬掉。没想到却让他吃软饭一直吃到底。<br>江天文人面兽心，最后杀了陈业，自己被警察抓住也是活该。<br>Steven梁花花公子一个，但毕竟也没有坏到底，最后还是有一个比较完美的结局。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-非主旋律的主旋律" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/15/非主旋律的主旋律/" class="article-date">
+  	<time datetime="2016-11-15T08:12:57.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/15/非主旋律的主旋律/">
+        非主旋律的主旋律
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很早就听说这部片子拍得很好，很真实。真正打动我的，是知乎上一些缉毒警对这部片子的评价：真实！对张涵予和彭于晏的评价也很高，于是选择了这部电影观看。<br>可能我对血腥的场面很不敏感。别人看了会恶心的场面，我毫无动容。在那十三具尸体被打捞上来的时候，我的身体并没有感觉有什么不适。我也没有觉得这些场面有怎么冲击我的大脑或者我的心胸。但是这并不能排除这部片子的某些地方让我动容，甚至让我湿润，我甚至在有些地方必须要用很大的努力来抑制自己。<br>当郭帆被一个娃娃兵用机枪扫射的时候，在那个刹那，我真是恨不能一枪就杀了那个小孩。虽然高刚当时向他射了一枪，可是当后来听说这个小孩居然没有死还活着的时候，我还是微微有点失望。我不管那么多政治正确。就算他是儿童，他也是恶魔的儿童。他只能死，只有他死了才能保证我们的队员不死。<br>当郭冰在啜泣，强忍着悲痛，泪水却止不住的淌到地上的时候，我动容了。我可以明显感觉到自己的眼角开始湿润。然后我开始努力的抑制自己。很快，画面转到了湄公河上，这种刺激终于过去。<br>这部片子就是一部动作片。其实情节是比较简单的。我们的人员跨境追捕毒贩，走了几条路。一条路不通，走下一条路。场面极尽所能事。我在整个影片当中都保持着高度紧张的心理状态，即便知道最后的结果也是如此。<br>相比毒贩的强大，我会感觉他们的人手是不是太少了？比如说高刚，最后竟然是单枪匹马来对付一群毒贩。<br>赌场那一段我是没太看明白。为什么监管会这么薄弱？几乎是在光天化日之下对岩多帕进行严刑拷打？然后狼狗竟然可以径自而入，这个我真心没想明白为什么可以做到？高刚在追击糯康那段，当高刚爬到顶楼，可是糯康却按下了爆炸的按钮。高刚在最高楼跌落下来，居然后面还能没事，还能作战。我没想明白是怎么做到的。<br>那段童兵玩俄罗斯转盘的片段实在是非常火爆。我最早知道俄罗斯转盘是从《猎鹿人》当中知道的。同样是在东南亚的热带丛林，没想到现在的主角却变成了两个童兵。那个情节真是非常紧张。扣一下扳机，自己没死，终于舒了一口气；然后对方扣了扳机也没事的时候，自己拿过来再扣，就直接打死了。没想到这些小孩子都能如此嗜血。你就很容易理解为什么那个商场的童兵可以如此轻松的拿出机枪冲郭帆扫射。<br>还有一个是炸指挥部的情节。两个孩子使用计谋，混过了门口保安的检查。然后那个小孩拿着炸药居然就快要走进指挥部了。丢下炸药，掏出手枪就要击杀那一刻，我恨不能有人能够一枪将这个小孩毙命啊。你是小孩，可你也同样是魔鬼的化身。<br>这部片子说是『主旋律』，但是也有数个不符合『主旋律』或者说不是『政治正确』的地方。比如奇夫对瓦拉的行刑。一语不合，老子就给你放血，就要让你死。我看了以后觉得很痛快啊！让你不说让你不说，你既然不说，那就去死吧。还有一段用直升飞机吊着皮尔的镜头，来进行威逼，也是看了让人非常痛快。非常时刻当然采用非常的办法来解决问题。击杀童兵也无所顾忌。对这一点，导演林超贤甚至自豪的说，我的片子就不是主旋律。 </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-喜欢的和讨厌的" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/11/15/喜欢的和讨厌的/" class="article-date">
+  	<time datetime="2016-11-15T08:12:45.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/11/15/喜欢的和讨厌的/">
+        喜欢的和讨厌的——《驴得水》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>片中最夸张的是裴魁山和周铁男两个人的前后反差实在太大。裴魁山一开始来做这个事情能是为了钱？能够来到这个地方做教育的应该都是怀揣理想的人吧。但是片中又把他写得非常的市侩，非常的现实。从他劝说张一曼要去西南联大当助教的这件事上基本上可以看出他其实是没有多少理想主义的。但是有一点，他在一开始的时候其实还是非常讲原则的。比如说他拒绝用奖学金来吸引学生。他的同事对他的评价倒是挺到位的：抠抠搜搜的。<br>我最喜欢的角色是张一曼。她最无辜，对人最没有伤害。但是最后偏偏是她受到了最大的伤害。<br>其次是孙佳。从头到尾，她都一直说要做正确的事情。她是一个很单纯的人。其实看到她的故事，就会想起年轻时的自己。比如说自己年轻的时候也会觉得贪污腐败不行啊，如果大家都去举报的话，不就没有这些贪污腐败了吗？实际上还是太幼稚。太幼稚的话，就会太执着于一个目标。比如说在救驴棚的问题上。水明明是不够的，可是她出于对驴的爱，她还是明知其不可为而为之。这种精神和情感殊为可贵，可是在现实中却毫无用处。<br>戏中最讨厌的人<br>第一是裴魁山。他的道貌岸然：一下子在张一曼面前低眉顺眼，一下子又恼羞成怒。他的显摆，也很让人鄙视。<br>周铁男的色厉内荏，让人看穿了他的虚弱。其实没有人不怕死。但主要是周铁男从一开始的飞扬跋扈到后面的摇尾乞怜，反差太大，这一点就让人特别受不了。你能！在现实中也是非常反感这种人。气焰嚣张得不行，真的大难临头的时候又尿裤子了。<br>铜匠的老婆，其实是一个非常常见的角色，真的非常讨厌。一副很屌的样子，蛮横无理。但是这个演员刻画得非常细致入微，是泼妇的典型代表，以致我看了以后就恨得咬牙切齿，恨不能一枪就毙了这个泼妇。<br>孙校长一心想办成农村教育，一心想让更多的孩子接受教育。为了达到这个目的，他可以不惜牺牲一些原则。理想主义者往往办不成事。孙校长其实算是一个现实的理想主义者，可是在理想主义里面掺杂了太多的现实层面，结果其实也导致了他的理想，其实已经不是那么理想了。当他对铜价说出『有教无类』的话的时候，我就觉得这是多么大的讽刺啊。你还想教别人，你们坐端正了吗？<br>当然，他的女儿孙佳是很正直的，而且是从头到尾都是正直的，初心未改。可是偏偏这种正直在现实社会中根本无法行得通。当周铁男冲着她高喊『幼稚』的时候，我感同身受。孙佳你以为你举报了就能解决问题了？不能啊。当然周铁男也是眼高于顶的家伙，以为自己只要上位了，掌握权力了，就能够对这些丑恶的人，丑恶的事，进行报复，进行扭转。这其实也是另一种幼稚。当你真的上位了，你有很大的可能已经成为『恶龙』了。你根本无法做什么，也无法改变什么。到最后，只能为自己谋利益。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-西藏之旅——亚东之旅流水账" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/06/24/西藏之旅——亚东之旅流水账/" class="article-date">
+  	<time datetime="2016-06-24T02:13:51.000Z" itemprop="datePublished">2016-06-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/06/24/西藏之旅——亚东之旅流水账/">
+        西藏之旅——亚东之旅流水账
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>照例很早，不到七点我们便起床。洗漱完毕，我们把行李寄存。我的拉杆箱留在了这里，因为背着它既有点多余又挺麻烦。结完帐寄存毕，而门口，是候着我们的大巴。</p>
+<p>这趟行程算是聚齐了人。除了夔去了青海西宁，来拉萨的同学都在这一刻齐活了。车上有几个本身就在拉萨的师弟师妹。曾德杰、刘晨昕，还有钱进、卢小萍。还有后来在江孜上车的梁岩和刘薇。家靖，毕业后第一次见到。（入学十周年聚会的时候他没有去昌平，那时便没有见到他）还有张蓉蓉、肖琦，还有一些不相识的朋友。</p>
+<p>车很大，我和巧分别找了座坐了下来。车后是一堆的饮料和食物。我们早晨甚至都没来得及吃早餐，所以其时我饿得发紧。</p>
+<p>第一个景点是羊湖。在景点下车之后，我们都是照例得掏出各种照相设备：单反、卡片机、手机各处寻找摄影的景点。边上有若干只狗昂扬的候在那里，正等着人去拍。西藏有一个奇怪的风俗，凡是你拍了某个动物，总是会有当地人找上来：“给钱，给钱。”“为什么给钱？”当你疑惑的发问的时候，他/她如是回答：“你拍了我的狗。”虽然这里是西藏，但那狗并不是很凶残的藏獒。我们觉得叫它们藏狗还差不多。</p>
+<p>但羊湖的确很漂亮。我们到西藏的最大目的，似乎饱览风景之余，便是将这些风景用相机保存下来。我在那个瞬间，突然有一种感觉：西藏的美景是无法用相机全部概览的。相机能够记录的美，永远只是西藏美景的极小一部分，而且相片的美也赶不上真实的美。</p>
+<p>我们到的景区是在山顶。这里风很大，非常的冷。耗子居然是穿了凉鞋。而当地的师弟穿的也不多。我们是扛不住。虽然羽绒服并没有穿上，但是毛衣还是加了进去。</p>
+<p>我们下山了。羊湖就在山脚下。一圈一圈的环绕着山缓缓降下海拔。羊湖，其实更像是一条河。我们在它的旁边走了良久。蓉蓉很兴奋的发现了湖边的老鼠洞。果然湖边有好多好多的洞。我突然想起了幼时在池塘的土地上也有好多的小眼，不过那个是蟋蟀的藏身之处。而这里竟然是老鼠。有人说起了那个打地鼠的游戏：老鼠一冒出地面就拼命的踩，果真颇像。</p>
+<p>我一路上隔着玻璃拍了不少羊湖的景色。羊湖好长，它不是一个平面的湖，它环绕着山。我们走了良久才远离它。在路上我们看到了一个很精彩的一幕：一台钩机在一辆货车上，正打算下来。走了一段，车底的履带一端着地，一端在车板上，如果钩机往前再行驶，钩机便要在货车上落下，没有一点儿缓冲。这个时候只见钩机的上身掉了个头，把铲斗顶在了车板上，借了这股力量，钩机顺利的下了车。我们看了都愣了，后悔没有及时拍下这段精彩的过程。人民群众的智慧果然是无穷的，这种方法都能想得到。</p>
+<p>车上还有不少东西：红牛、矿泉水、各种零食。我取了面包吃。早上没吃，真的很饿。临近午饭时间。耗子在打电话联系饭店。在江孜的某个饭店。上海东路上。</p>
+<p>我们在路边下车。进门找到两台桌子坐下。我的身边坐了一个没见过的高大小伙子，眼睛略小，似乎总是一副未睡醒的模样。他看起来很眼熟的，难道是01,02毕业入学的师弟？我便好奇的问了：“我看你很眼熟的样子？你是哪一届的啊？”“08年毕业的。”“哦，那我应该不认识。”08年毕业离我已经太遥远了，我不可能在校园见过他。““你是不是看过《此间的少年》？”他问道。我突然恍然大悟，“你是那个杨康！”在《此间的少年》当中，我和很多人一样，都认为杨康这个角色的演绎最为自然和漂亮。后来我从别人的口中得知他叫梁岩，还是学生会副主席。我最早以为他大概也是临时过来西藏玩的。可久而久之，我才知道他原来也是支教团的师弟，在西藏某个中学任教。被耗子借调在商务厅。梁岩之前是去了阿里转山（就是徒步走）带着云南支教的刘薇在一起。刘薇是梅州人，家在深圳，支教在云南楚雄。刘薇本来要去林芝玩的。梁岩道：“林芝跟云南还不是一样？你去林芝还不如跟我去阿里转山。”然后刘薇便被骗去阿里转山去了。转山听起来挺恐怖的样子，似乎要耗费大量的体力。</p>
+<p>关于梁岩，卢小萍还饶有兴致的讲起他当老师的故事。梁岩在学校里很受女生的欢迎。有一个女生很迷恋他，有一次卢小萍正好在梁岩的房前，女生怯怯的问道：“老师你可以让我进去看一下梁老师的床吗？”“你直接把她轰走就完了。”梁岩在一边插嘴道。我好奇的问道：“这些女生知道梁岩演过《此间的少年》吗？”我想不会是明星效应罢。“没有。”卢小萍答道。</p>
+<p>卢小萍的趣事也颇为不少，被他们这群人称为睡神，似乎总是一副睡不醒的模样，很快便能入睡。</p>
+<p>谈话间又提起了《此间的少年》。这部小说毕竟是我们校园时一部难忘的回忆，故这部电影亦是我非常怀念的作品。我们议起了剧中穆念慈的扮演者。“他们那时候还让我跟她好”，梁岩说道。那便有趣了，杨康和穆念慈在剧中未曾结合，在现实中却成为了一对。穆念慈在打扮之后还是颇为美丽的。“不过她声音太难听。片中她的声音是配音的，她本人的声音更难听。“原来竟是因为声音”杨康“舍弃了”穆念慈“啊。”不过她现在已经结婚生子了。“一段姻缘便这样断却。剧中的穆念慈还在痴痴的爱恋着杨康，而现实中的穆念慈已经开始了一段新的幸福生活。</p>
+<p>梁岩在不断的咳嗽。“你感冒了？”我因为也感冒，所以对此特别好奇。因为都说在西藏感冒是非常严重的一件事情，严重的话是要得肺水肿的。甚至要及时送到内地。“对啊。”他答道。”你吃药了吗？“我很好奇在西藏的人是如何对待感冒的。我在内地的时候基本上都是让感冒自然好的。不去看医生，也不吃药。但是在这里却丝毫不能轻视。”嗯，有的。“我后来见到他在喝止咳糖浆。他咳嗽了良久。直到我们临走时还咳得非常严重。</p>
+<p>饭间我们说起了西藏自治区医院的话题。耗子说了好几个西藏医院的典故，表明西藏医院的落后。倒不是硬件条件。他们的硬件条件是可以的。但是他们的医护人员的素质却不理想。西藏的卫生厅副厅长有点不舒服，别人劝他回内地看病。他说：我作为西藏卫生厅的副厅长，要相信西藏当地的医疗水平。结果去医院一看，却让做了一个微创手术。但病不见好。因故回内地，在内地的医院看过，诊断为肩周炎。还有一个哥们被拔错牙了。这哥们牙痛，去医院看，拔牙。结果一个多月了还在牙痛，不能喝酒。别人说：”你怎么这么矫情，都一个月了还牙痛？不能喝酒。“结果复查才发现是把一个健康的智齿给拔了。还有一个更严重的是截错肢。一哥们腿坏了，要截肢。结果在拍片的时候，本来他应该仰躺着拍的。他却是俯卧着拍了片。结果诊断出来的时候医生便弄错了方向，本来应该截的是左腿，结果却截了右腿。听起来深为恐怖的样子。他们便戏谑道：”你应该庆幸自己从鬼门关逃了回来。“因为我昨日去西藏自治区医院看病了。我还心想：当时西藏自治区医院的医生还颇为不屑林芝地区医生的医术。结果你们自己的名声反倒如此。不过传言便是传言，大家一笑而过便是。想当年，校医院被称作”小西天“（想想这个名字也搞笑），我也在”小西天“看过病，不也坚强的活了下来。</p>
+<p>亚东靠近边境，所以路上很麻烦。要各种查岗。我们在路上经过好几次。耗子搞到了商务厅的证明，证明我们是一只商务考察的队伍。我们把所有的身份证和边防证统一交给德杰管理。统一查验。但在查边防证的时候，却要下了车一个一个轮流过去。在查边防证的地方，我上了一趟厕所，不堪忍睹，不堪忍闻。这里到底是西藏。就连厕所也和三十年前的内地是仿佛的。</p>
+<p>临近傍晚，海拔渐渐降低。路两边的山上的绿色渐浓。风景并不亚于林芝。我们在路上经过若干县城，简直就跟一个村落那般小。天色见黑的时候我们终于到达了亚东县。亚东县城也不大，但比我们之前看到的要更大一些。我们在一家上海花园酒店住下。住三楼啊，而且没有电梯，这个时候我还没痊愈呢还是感觉很疲惫的样子。</p>
+<p>吃晚饭的时候，我已经感觉耗子的海量了。奈何我并没有怎么痊愈，因此也不怎么敢喝。略微喝过几口便不再饮了。饭毕，我们本来还相约说要玩三国杀，还要去吃烧烤，但最后我什么也没有参加：因为真的很倦了。</p>
+<p>但是我来藏后第一次洗澡了。因为真的很久很久没有洗澡了，现在病虽未完全康复，但我已经明显感觉要好过之前了。洗过之后觉得非常爽快了。看着微信群里大家的讨论，似乎也没有人去玩三国杀。我和巧看了一会儿电视。我极难得看电视的。不一会儿便入睡了。</p>
+<p>早上起来，我们去吃早餐。酒店大堂遇到了刘晨昕和曾德杰。我们几个人一块儿出去，刘晨曦带路。路上不时有牛屎出现。这大概是西藏的特色。但路上的车极少。这也和三十年前是一般的。旁边有一家玉包子的包子店。刘晨昕说很难吃。他带着我们转了两圈，来到了一个小包子铺。我们在包子铺内坐下。要了豆浆和包子，还有油条。这里的包子果然是好吃。后来我在车上还吃的饶有滋味，即便那个时候它已经凉了。</p>
+<p>照例是要比计划时间要晚的。有些人要睡懒觉。总之迟到之类的是我们这群人类经常犯的毛病。但总归是因为自己人包的车，所以迟到一点也无妨。我们回酒店整理好行装，上车找好座位。</p>
+<p>不过大家在车上是要打牌的。坐好不久我们便重新分配了座位。一部分人在车后打扑克。我和几个人：曾德杰、马美丽、寇锦玮、钱进、梁岩几个人在车前打三国杀。我已经很久没玩三国杀了。之前和胡晨一帮朋友时不时的会打一下，但胡晨去中欧之后便没有再打过。生疏得紧。巧对三国杀并不熟，也没有多少兴致玩。钱进则经常打错牌，她一副马大哈的样子。其他同学经常戏谑的称她为”汉子“。梁岩则颇有研究的样子。虽然他一副满不在乎的样子，但是打牌中却感觉得出来心得颇深。马美丽是初次上阵，但攻势凌厉，一次拿了甘宁竟把我等杀的片甲不留，不得不刮目相看。</p>
+<p>打牌的时间过得非常快。我们在车上是不觉时间的流逝，除了停车下来观赏风景的时候，我们才能体验到西藏的存在。我们在女神峰脚下驻步。一望无际的公路，远处是雪山。耗子说这里是喜马拉雅山脉。巧在这条路上拍了一张照片，坐在了公路上，背后是延伸到无际远处的公路，后来作为了他的头像。我因为生病，总是极懒怠的。但是当大家要拍跳跃的照片的时候，我饶有兴致的加入了。这是我第二次拍跳跃照片。后来效果看来还很不错。我固然因病而未能跳跃到极高之处，但也尽天命了。梁岩的脚横射出去，表现了不一般的动作。刘晨昕和德杰的脚弯曲，让自己的脚离地面更远。而我则是将整个身体打开，尽力一跃。这张照片在微信群上播出的时候，得到了广泛的关注。</p>
+<p>路上还经过一个抗英英雄纪念碑。大概是当年英军从印度经过这里入侵西藏，但是受到了当地民众的奋勇抗击。这里驻足的人并不止我们。我们照例是拍过几张照片。临走的时候，我发现地上有若干不可降解的垃圾。</p>
+<p>离开亚东的下一站是日喀则。在快到目的地的时候，只见耗子用手机和谁在联系着什么。我们在一个地方停下，然后便有几个当地人上来。我坐在车的前首，便让我代表大家下来接受了哈达。哈达是一条白色的长带，我仔细摩挲着，这大概是化纤制品，。在电视上我们见到过好多次送哈达的场景，第一次体验这种哈达挂在颈上的感觉，真的是非同凡响。</p>
+<p>其他人依次接受了哈达。然后他们下了大巴，坐在他们自己的小车内作为我们的前导。我们来到了一家当地的酒店。</p>
+<p>这家酒店据说远离市中心（我在这里是半点方位感也没有的）但酒店的布置煞为有特色，浓郁的西藏风情扑面袭来。房间虽然不大，但很干净，也很安逸。我挂着哈达戴着墨镜拍了一张照片。在房间内的椅子上，我和巧各自拍了一张照片。在酒店停足未久，我们便要去吃藏餐。</p>
+<p>耗子说他是吃不来的。那么其实我更受不了藏餐。藏餐的饮食很多都是牛肉的罢。而我是不吃牛肉的。还是照例分两桌。喝酒的一桌，另一桌不喝酒。我发现很有趣的一点，靖猪和肖琦两夫妻，肖琦坐在了喝酒的一桌，而靖猪却坐在边上的不喝酒的那桌。各种凉菜上桌，我先拍了几张照片。这是我第一次在吃饭的时候拍照的。我平时是极不习惯去拍菜的。这种习惯甚至我还老记得有一个段子，说在中国人的手中，手机是不是一种验毒的工具？不然为什么每次吃饭前这帮中国人都要用手机拍一下食物呢？但是这是西藏，我想大概这是极有意义的罢。店中的景色也拍了。居然被白梓遇认出了这个地方，说她也曾经来过。</p>
+<p>我大概只能拣几个素菜吃了。这里似乎没有猪肉。我在荤菜中几乎能吃的只有这种动物。当然还有鱼。而传说西藏人是不吃鱼的。我很遗憾，没有去吃这里的酸奶，不知是否忘却了。刘晨昕坐在我身边，夹了一个羊眼给我，怂恿我吃下去。我也不知道为什么会那么难咽。但是我真的是努力了很久很久，脑海里还是会不断要浮现出那只盲羊的模样罢。好容易才将羊眼咽下肚内。而肚子里却将是翻江倒海。我几乎似孕妇般欲吐而出。</p>
+<p>我的身体状况略好了，我想大概是能够喝酒了。问喝什么酒的时候，我含糊的答应下来喝白酒。青稞酒当然是这边的特色，不过略淡。做东的是日喀则的商务局长。他约莫40-50岁的样子，应该是当地的藏族人罢。作陪的还有副局长和一个女科长。科长并不能喝酒，只是用矿泉水和我们干杯。我们喝的是赖茅，1000ml，很大的瓶子。我们一般喝的酒都是500ml。我其实还不能喝太多。所以在喝醉之前，就不大能下肚了。几个人先敬了局长。巧亦不例外。我见他举杯频频，心理煞是艳羡。我当时已经很明确知道自己不胜酒力。</p>
+<p>我虽然喝了不多，但最后还是去了洗手间吐了。在毕业后这么多年，我已经很少喝酒吐了。虽然也有不少次喝醉过，但呕吐的经历已然不多。</p>
+<p>回到酒店，巧说他们是不是在顶楼呢。我以为顶楼大概是一个大天台。微信群里没人回应。我便兀自上去。不料上面只是茶馆。服务员把我引到一个房间，却不料是局长和耗子、刘晨昕几个人在喝啤酒。我似乎略有点后悔，因为我有点不想喝酒了。但这个场景下，又不能退缩。我又召唤了巧上来。自己硬着头皮便待下去了。局长说起了很多事情，我也不懂，只不过频频点头称道。耗子后来看来是想早点结束，不料却折腾了几次才完。又是频频举杯，偏偏也是我忌惮的啤酒。我在啤酒的量上是极为有限的。临走前我忍不住又去了一趟洗手间。</p>
+<p>事毕，刘晨昕闹着要请我们去吃烧烤。其时他已经喝醉了，执念很重。我当时已经很疲惫了，并不想再出门。但刘晨昕非常执着，我差点就想妥协。梁岩、德杰终于把他哄回了房间。我们各自回房，沉沉睡去。</p>
+<p>次日一部分人去扎仕伦布寺，而一部分人已经去过的，则可以在酒店睡懒觉。我们先乘了大巴去用早餐。要了包子，油条，豆浆。耗子原本还打算多要一碗豆浆，结果发现这里的豆浆非常大碗，终至于放弃了这样奢华的念头。油条真是好实在啊，没有我们以前吃过的那般松软，感觉就仿佛一团面团。而包子，也没有我们在亚东吃过的那般好吃。不过也还好啦。</p>
+<p>日头非常毒，不得已必须戴上了墨镜。我们乘着大巴来到了扎仕伦布寺。这里是班禅的大本营。但最早却是达赖修建的。不过班禅现在不在这里，常年是呆在北京的。我原本以为这是因为建国后我党的要求，读过书之后才知道早在民国之前，班禅便已经逃逸到了内地。</p>
+<p>寺庙总是要收钱的。购买门票后，我们依次进入寺庙。德杰又在和钱老师开玩笑，惹得钱老师便要对其一通暴打。我一直没搞明白，为啥钱老师会被称作是“汉子”呢？一袭的长发，仍然是妹子的风姿啊。</p>
+<p>导游是一名西藏本地人。为我们介绍了扎什伦布寺的历史背景。他，略带着一点点口音，我们仍然可以清晰的分辨他的意思。寺庙建在山上。我已经不记得叫什么山了。有几个建筑，还有几个是灵塔。所谓的灵塔，里面盛放的是班禅的真身以及以他真身为模的金像。班禅的真身通过藏药的浸泡，甚至连同他的内脏也保留下来。这一点是木乃伊所不及的。木乃伊的保存是要去除内脏的。</p>
+<p>我这才知道，藏传佛教和传到中土的汉传佛教是不同的。藏传佛教并不要求你不能踩在门槛上。也没有规矩说要从哪个门入哪个门出。寺庙里自然是一尊尊的佛像。四大天王大概和内地是仿佛的。不过弥勒佛这个未来佛在西藏的形象却大不相同。在西藏，它又被称为是强巴佛。</p>
+<p>寺庙里还有专门的消防人员：一袭黄色的制服，一顶黄色的帽子。他们的工作竟然仅仅只是防火。</p>
+<p>走到后面，突然发现了许多外国人。我想起外籍人士不是蛮难进入西藏的嘛。导游又提起了另外一件事。我们都知道藏人喜欢虔诚的趴在地上，几个磕头和叩首，一路上均如此。但是近年来这样的风景却少了。难道是因为他们变了吗？</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-纯粹的动作片，画面感很强，情节不足——《绣春刀》观后" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/" class="article-date">
+  	<time datetime="2016-01-19T01:25:32.000Z" itemprop="datePublished">2016-01-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/">
+        纯粹的动作片，画面感很强，情节不足——《绣春刀》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这显然是一部动作片。片中打斗的镜头很多，而且我承认拍的也不错。我甚至觉得导演为了表现打斗场面的
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+        <p class="article-more-link">
+          <a  href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/#more">more >></a>
+        </p>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-缺乏深入挖掘——《少年犯》观后" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2015/11/24/缺乏深入挖掘——《少年犯》观后/" class="article-date">
+  	<time datetime="2015-11-24T13:11:56.000Z" itemprop="datePublished">2015-11-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2015/11/24/缺乏深入挖掘——《少年犯》观后/">
+        缺乏深入挖掘——《少年犯》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在很多年以前，那时还在我读幼儿园的时候，我曾经看过这部片子。给我留下印象最深的是里面的一首插曲：“妈妈呀，妈妈呀……”<br>为什么会有这么多少年犯？他们为什么会走上犯罪的道路？影片给的理由很简单：多数是因为父母遗弃了他们，他们不懂法，有些人甚至都不把杀人当回事儿。可是真的是这样吗？我只觉得影片在很多地方的处理过于简单武断，它没有把内容进行深入表现，而仅止于非常表层的讨论。我觉得完全可以再进一步深入挖掘。比如那个狱霸行为：它是怎么形成的？它都造成了那些危害？方刚和另一个家伙的冲突，有没有造成后面的报复性行为。他用一只手就能制服他，靠的是什么？他父母都做了些什么，为什么对他如此冷淡？他这么倔强的脾气是怎么产生的？这么多内容，片子都一笔带过，根本没有深入挖掘。<br>对谢洁心的处理过于简单。可能这个演员的表现能力也非常有限。她在片中的作用就是一个老好人。看到犯人已经严重斗殴了，犯人们说那是开玩笑，居然也能相信。缺乏自己的独立思考能力，空有一副所谓的善良热心心肠。对于丑恶事情缺乏处理能力。包括中队长也缺乏这个能力，所长掌握的情况似乎略多一点。至少他知道方刚在打架事件当中不是承担主要责任。（但是也奇怪，不管怎么说，在少管所打架一定是错的，即便是因为对方的狱霸行为，他似乎也应该承担一定的责任。但是没有，居然放过它了，这是很奇怪的一种设定）<br>为什么少管所里还能组织起一支乐队啊。你说个别人擅长乐器，我相信。可是有那么g好多人都能够乐器，这真的就有点让人匪夷所思了。难道真是的少管所里真的能凑得出一支乐队？这说明什么？犯罪团伙的素质都很高？<br>情节的设置真的很奇怪。为什么在少管所里居然有剪刀，而且有两把。而且，吞剪刀事件已经闹过一次，虽然是假的，可是毕竟要引起狱方警惕，可是狱方居然没把这个当回事，又让犯人吞了一次剪刀（虽然这次是来真格的了）狱方在这件事上应该承担非常严重的责任。可是影片也没有涉及到这个情节。这个也是不可思议的。<f6><br>我觉得演得最好的是萧佛，虽然他也不是专业演员（这部片子最大的特色是演员基本上都是少管所的孩子们），但是把人物性格表现得活灵活现，他的机智，狡黠，甚至也有点可怜……在所有的演员当中他是最有表现力的。 </f6></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-幼儿园回忆录" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2015/11/22/幼儿园回忆录/" class="article-date">
+  	<time datetime="2015-11-22T08:43:09.000Z" itemprop="datePublished">2015-11-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2015/11/22/幼儿园回忆录/">
+        幼儿园回忆录
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我几乎从来没有回忆过幼儿园的生活。实际上我是有记忆的，尽管年代久远，记忆可能残缺不全，甚至也许已经发生了错乱。但是它们就是在我的脑海里存在着。</p>
+<p>我已经有孩子了。我现在还能教孩子很多我幼儿园时候念过的儿歌。『你拍一，我拍一，一个孩子抱公鸡；你拍二，我拍二，二个孩子肚子饿；你拍三，我拍三，三个孩子爬高山；你拍四，我拍四，四个孩子写大字；你拍五，我拍五，五个孩子学跳舞；你拍六，我拍六，六个孩子切猪肉；你拍七，我拍七，七个孩子坐飞机；你拍八，我拍八，八个孩子吹喇叭；你拍九，我拍九，九个孩子喝老酒；你拍十，我拍十，看看谁是蒋介石。』这属于比较普通的儿歌。还有一些，其实是很不适宜的。『冬瓜西瓜你傻瓜，傻来傻去就是他，他的屁股会开花。』『东南西北，你家有鬼。』『红旗飘飘，肚子幺幺，你妈生个孩子喜夭夭。』这几个我是不会再教给我的孩子了，尽管它们是我的童年记忆。</p>
+<p>我上幼儿园的时候大约是在84年，虚岁5岁。对第一天去幼儿园的场景，仅有一个非常非常模糊的印象了。我留下的印象大概是：对陌生环境的恐慌，害怕，强烈的不适应感。</p>
+<p>幼儿园其实离家里有点远，至少我觉得比我在小学，比我在中学可能还要更远。当然也许是因为我那时候还太小，会把很近的距离也看得很远。去幼儿园，出了家门要右转（往西走）走到一棵大榕树旁边的时候，开始下坡了。然后沿着左侧往下走，在一家房子的边缘有一排石板路，走出去以后大抵就来到了田埂路。但是这个田埂路应该蛮宽的，大约有两三米宽。往前走一段距离会遇到一个竹器厂，里面有一个工人是浙江人。再往前走一段路，右拐一段就来到了我们的幼儿园。我们去幼儿园也是要下一个坡的。</p>
+<p>幼儿园的大门是两扇大木门。进去以后会有两个水泥的滑滑梯，旁边是阶梯。大门的右侧是老师的办公室，里面还有一些给孩子们的玩具。在幼儿园的北侧是有三个教室，分别是小班、中班、大班。在教室的末尾，有一个大土堆，再往前是一个老教室，我们下课时候可以看到里面有不少破桌椅。教室的南侧是一个大院子。到了冬天，纷纷有很多孩子们会带着屋子里的长条椅出来晒太阳。大院子的西侧应该是绿地，种满了一圈的冬青。还有一个钢铁建筑，上面有吊环，还有爬梯状的东西，供小孩子玩乐。厕所在最西侧，一排站立式的便池。我不记得有没有蹲坑。我在小学幼儿园阶段都没有在学校里上过大号。</p>
+<p>我们小班时的一个老师，就叫A吧，好像是生孩子去了。直到我们大班的时候，曾经回来过园里一次。但是并没有再带我们了。似乎小朋友们对她的印象特别好的样子，大家似乎很喜欢她。所以当她回到幼儿园貌似做客的时候，还有很多小朋友貌似还去偷看。</p>
+<p>幼儿园其实也上课学习的。我记得最清楚的是上数学，5可以分成2和3；4可以分成2和2；……我实在想不起来语文都学了什么。也许是在学汉字？因为幼儿园毕业的时候我们实际上是有考过一次试的。我语文和数学都考了满分。那大概是我人生当中第一次考试，第一次考满分。好像是95分以上有什么奖励。我的同学zy好像考了94分，非常不爽的样子。</p>
+<p>那时候的游戏很简单。课间的时候，经常有小朋友们跑到冬青下面坐着，玩卖西瓜的rpg扮演游戏。还有就是追及游戏。一个人在前面拼命跑，另一个人在后面拼命追。官方一点的（老师带着玩的）那就是丢手绢吧，还有老鹰抓小鸡。还有就是『老狼老狼几点钟』，我记得是好像喊三点钟的时候老狼就可以抓人了。我脑海里现在仍然能够浮现出A老师带我们玩这个游戏的场景。追及游戏还包括了男女之间的互追。应该都是男的追女的吧。zy同学很喜欢这个游戏，而且还给这个游戏起了个名字叫『抓结扎』，那时候的游戏也有这么强烈的政治色彩。</p>
+<p>那时候大家还很喜欢玩四角板。找纸折成四角板后，往里面垫个硬东西，然后就互相摔。一个人的四角板放在地上，另一个人的四角板就去摔它。如果能翻个个儿，对方的四角板就归你了。</p>
+<p>我们那个时候就已经开始有了帮派。我记得在幼儿园里有两帮同学，课间就不断的斗来斗去。这个事情让我后来一直想写一个帮派的小说。踌躇满志的想写一篇长篇小说。多少年过去了，我也没有写成。我想这个帮派的事情会不会是受武侠小说的影响。当时古惑仔还远没有出现呢。</p>
+<p>每年的过年的时候都会有采茶灯的活动。好像会从园里挑几个小朋友去参加这个活动，但是我从来没有参加过。</p>
+<p>而到了六一儿童节，我们每个人要带上一定数量的大米到幼儿园交给园里，然后园里再给大家发清汤粉。每个教室大概会做一番布置，会有很多游戏。大家玩了之后就可以回家。</p>
+<p>85年的时候，下了一场很大的雪，是我生平以来第一次经历大雪。之前只见过冰棱子（只要把一碗水放到户外，就可以在早上见到一层冰——其实那个时候应该也是挺冷的吧）于是我们小朋友们便被提前释放回家了。我回到家的时候，父亲也在家。不知道是在做表还是在干嘛。</p>
+<p>那时候要贴小红花。我记得教室的墙上会贴一张红纸，然后写上所有小朋友的名字。如果要表扬某个小朋友，大约就会在他/她的名字后面贴一个小红花，以资鼓励。我能记得的名字：『陈妙』『陈静』『陈净』（陈净是个男孩子，陈静是个女孩子，而且是个非常野蛮的女孩子，我记得我似乎曾经被她推过）壮壮，zy，cbf，（zy和cbf后来成为我高中同学。zy更是在高中还做过我同桌）</p>
+<p>我觉得幼儿园最大的遗憾可能是从来就没有合过影。快毕业的时候倒一直说要拍照拍照来着。但是因为天气原因，所以一直拖到最后也没有拍成。</p>
+<p>幼儿园其实是拆后重建的。可能是在中班的时候。当时幼儿园搬到另外一户人家那里。幼儿园老地方则拆掉重建。直到大班之后才回去吧。</p>
+<p>可能在小班的时候还有大人送去幼儿园。那时候大人走的时候还会非常难过。等到后来逐渐的就自己去上幼儿园了。爷爷有时候骑车上班的时候会送我去。</p>
+<p>那时候的小朋友们不知道为什么会那么的心灵手巧。我记得他们会做火枪，拿自行车链条来做。会做滑板，只要找一块木板，再找一些轴承大概就做成了。不知道他们那里来的天赋。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-不可多得的佳作——《鬼子来了》观后" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/" class="article-date">
+  	<time datetime="2014-03-19T05:37:44.000Z" itemprop="datePublished">2014-03-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/">
+        不可多得的佳作——《鬼子来了》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这部电影在3,4年前曾经看过一遍，而今再看一遍，觉得还是有很多感触。11<br>不知道为什么这部电影会成为禁片。它并非歌颂日军，相反，在影片的最后，它极大程度的表达了日军的凶残
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+        <p class="article-more-link">
+          <a  href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/#more">more >></a>
+        </p>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-这真的不是我们的青春——《致我们终将失去的青春》观后" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2013/06/30/这真的不是我们的青春——《致我们终将失去的青春》观后/" class="article-date">
+  	<time datetime="2013-06-30T04:12:22.000Z" itemprop="datePublished">2013-06-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2013/06/30/这真的不是我们的青春——《致我们终将失去的青春》观后/">
+        这真的不是我们的青春——《致我们终将失去的青春》观后
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我觉得这部片子还可以，可以让人吐槽的地方不是太多。但是，它真的不是我们的青春，即便里面添加了不少我们青春时的元素。</p>
+<p>柯景腾拍的《那些年，我们一起追的女孩》，在我看来能够引起共鸣的东西反而更多，即便它的背景是在台湾。可是这一部《致青春》，却真的没有太多我们的影子。</p>
+<p>郑微这个角色实在是，太极品了。尽管从讨厌到喜欢，也是人生当中可能存在的一种现实。但是像郑微这样，如此的深恶痛绝，到后面的喜欢，我以为过渡得有点不自然。我还没怎么觉察，靠，郑微居然爱上了人家陈孝正。凭什么啊？陈孝正真的和她不是一路人啊。</p>
+<p>这部片子似乎充斥着女性的主动追求。后面施洁对林静的追求也是有点太癫狂了。除了许开阳还算有点样子之外，其他的男生，都怯怯懦懦的。张开喜欢阮莞喜欢了那么久，可是似乎只知道每天送花，却不敢公开表示。赵世永更是扯淡。自己让其他女孩怀孕了，居然跑着哭着去求自己的女友。关键是他还不仅是求原谅，还要求她给打胎的钱。而且最匪夷所思的是，居然是自己的女友来陪这个女孩去打胎。这样极品的事，还真不知道这世间能有多少？</p>
+<p>在我青春当中，这些人，几乎都一个也不存在过。 </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-西藏之旅——林芝" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2013/06/23/西藏之旅——林芝/" class="article-date">
+  	<time datetime="2013-06-23T14:13:34.000Z" itemprop="datePublished">2013-06-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2013/06/23/西藏之旅——林芝/">
+        西藏之旅——林芝
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>次日要很早就起来，林芝很远。我到前台的时候，发现夔也在。原来夔也改变主意，决定参加我们的林芝团了。结果证明他做出了一个非常正确的决定。我们把行李收拾好，巧把氧气瓶之类的拿去寄存。我们退完房，出门去找汽车。</p>
+<p>是一辆丰田的SUV，land cruiser。夔坐在副驾上，我和巧，还有他朋友坐在后面。我们还开玩笑说别是上错车了。因为可能会有很多人都是这样租车旅行的。”要不要对一下暗号？“”天王盖地虎“”宝塔镇河妖“。</p>
+<p>我们上了车，走了一段才去吃早饭。一坐下，我们啥都没点，老板便端来了一碗稀粥，我们再点上包子鸡蛋之类的。饭毕，我们四个人好像才花了26块钱。（不知道是不是我记忆出问题了。。）夔问买水了没有，我们然后又买了几瓶水上车。</p>
+<p>路上径行。巧来西藏前已经堵了不少西藏方面的书。《喇嘛王国的覆灭》、《西藏生死书》、《仓木加错的情诗》。他说来西藏，看风景是一方面，另一方面当然还要来了解西藏的文化，所以应该多读点西藏方面的书。巧所言甚是。尽管我也下载了这几本书，不过却没来得及看。我便向他询道这些故事。不过巧仍然是那套言简意赅的风格。不多几句便把这些故事给说完了。</p>
+<p>（写作真是可以把人时光倒流，我仿佛又觉得自己回到了那一刻在SUV上颠簸的场景）我们沿着拉萨河而行。我坐在靠山的一边，见这里奇形怪貌，便拍了几张照片。巧：”这么丑的风景你拍什么拍啊？“</p>
+<p>到了一个地方，司机停下车来。放我们下来自由活动。停车是因为这一路上要限时，这一路上你不能在某个固定的时间内到达某个地点，否则被查到的话要重罚。司机说要罚两千块钱。这个地方还停了好几辆车。巧抱怨说这里的风景不好。</p>
+<p>这一路上没有厕所，我赶紧跑到路边远离人群的地方解放自己。</p>
+<p>回到车边。每个人各自拿出相机、手机进行拍照。这里的河水没有南方的秀丽，但是这里的天湛蓝湛蓝的，的的确确是世所罕见。也难怪，这里是离天最近的地方嘛。</p>
+<p>最有意思的是，这路上还冒出了一只白羊，而且这只白羊煞为有趣，不怕生人，甚至还会径自跑到人家的车里去寻找食物。它便进了一辆车，找到了一包油条，有滋有味的吃起来。天呐，路边的野草它不吃，却来寻找人类的油条来吃，这是一只怎样的吃货啊？夔追寻它，要与它合影。奈何它却不买夔的帐。怎么也没拍到。</p>
+<p>我们几个人就在车前拍了几张照片。西藏的日头很毒。我们必须要戴上帽子，戴好墨镜，不是为了酷，是因为阳光真的太强烈了，脱掉眼镜真的让人受不了。</p>
+<p>SUV继续前行到前方一处停下。巧等人认为这个地方风景比较好。</p>
+<p>待足时间之后，汽车经过检查，继续前行。海拔逐渐升高，这里的海拔高达5013米。我在一路上都看到很多五颜六色的旗帜。在山口这边，同样也看到了。我才知道那个原来叫做『金幡』。当风吹过的时候，就相当于念过了一遍经。转经筒也是一样的道理。</p>
+<p>这里的人非常多，到处都在拍照这里的温度好低，我不得已穿上了羽绒服。</p>
+<p>车辆继续前行，而我已经明显的愈加不适。路上我们来到了途经最高处：米拉山口。</p>
+<p>米拉山口海拔5000米以上。这里停了许多辆车。人头攒动，不少金幡在空中飘舞。（我一开始一直很不理解金幡是干嘛用的。看上去很像是节日期间的彩幅。后来才明白那是经书，风吹过，就好比读过一番经那般。西藏多数人的文化程度比较低，不能读书，就只好靠这个来念经。）有一些人会过来问：”要不要挂一张金幡在上面。“我摆手表示不要。我随手用手机拍了几张照片，然后去了趟厕所。这里的厕所就好像30年前内地的厕所那般，需要忍一忍厕所内的异味和异象。</p>
+<p>离开了米拉山口，海拔渐渐降低，绿色也逐渐浮现在我们的眼前。在我们从拉萨出发的时候，一路上的山头还是非常荒凉的，没有任何植物。但是在接近林芝之后，风景就开始逐渐变得像江南了。我们去的第一个景点是南迦巴瓦峰。据说非常难看到它的真面目。因为长年有云。</p>
+<p>但是我们竟然看到了。司机说他来过十多年了，这是他头一次看到它的全面目。耗子在微信群里也说他来过三次，都没见到过。王凡在拉萨支教过一年，也说从来没有见到过。我们算是幸运的了。</p>
+<p>我们接下来要去的是林海。但巧和他朋友决定不去了，留下来继续欣赏南迦巴瓦峰的美景。而我的身体非常不适，已经无法在车外长期呆着，便回车上去了。</p>
+<p>所谓的林海，是指这里的山有很多很多的树木。不过老实说这个景点其实很坑爹的，真的没有什么特殊的。我的步履已经蹒跚了。观景台还要下很多台阶。我勉强走下。随意拍了几张。返回的时候我的步伐非常缓慢。夔不断的催促我。我难受得要命。</p>
+<p>回到南迦巴瓦峰的观察点的时候，巧很兴奋，说等到了更美的风景。刚才太阳出来了，南迦巴瓦峰在阳光的映照下变得更加美丽。</p>
+<p>天色渐晚，晚上九点到十点左右我们终于来到了酒店。酒店不错。我们放下行李到外面觅食。没有找到司机说的石锅鱼的地方，我们找到了一家川菜馆。（西藏这边遍布的几乎都是川菜馆，而且我很奇怪，在内地处处可见的’兰州牛肉面‘却从未在西藏见到过。当然，’沙县小吃‘也没有。）我们要了一份石锅鸡，没有吃完。巧拍了一张我的照片发在了微信群里，面容憔悴。我们在路上看到了一个小诊所。本来还打算吃过饭后去诊所看一下，结果回去的时候诊所已经关门了。只好作罢。</p>
+<p>回去的时候，夔说要么我干脆明天就不出去了，就在酒店休息。我考虑到自己的身体状况，外出颠簸一番真的是很不舒服，也很难玩好。南迦巴瓦峰那番便是前车之鉴。我接纳了他的意见，决定明天去诊所看一下病。</p>
+<p>他们走了，我在酒店里上网了一阵，把昨日的几张照片发到了微信的朋友圈里。很快就有人来围观。我在酒店的窗边眺望了几下，发现了一个有意思的广告：中国龙工。我万万没有想到，在西藏这个偏远的地方，居然还有龙工的广告标志。我也把这个照片发到了朋友圈离，结果陈剑找到了亮点。</p>
+<p>我直到快九点半才下楼来到餐厅觅食。餐厅里没剩下多少吃的东西。我简单吃过之后便出门了。先是去了趟超市，买了根唇膏，8块钱，倒是挺便宜的嘛。西藏的气候非常干燥，嘴唇很容易干裂。唇膏还是非常必要的。我在昨日的餐馆吃过饭后便去了诊所。医生是个中年男子，要给我打吊瓶。巧他们也是说打吊瓶好的快。我虽然一贯不喜欢吊瓶，甚至不喜欢吃药。但是在西藏这个环境下，如果任其自己好转，恐怕耗时甚多。我痛快的接受了医生的意见。——也许，后面感冒可以那么快好和吊瓶还是有几分关系吧.</p>
+<p>很有意思的是，这里吊瓶似乎是最主要的手段。除了我以外，有几个人进来也是要打吊瓶。我身边还有几个，一个是藏族老大妈，一个是藏族小姑娘，各自都吊了瓶。给了我四瓶水，吊着。藏族姑娘没吃午饭罢，还要了一份外卖，窸窸窣窣的在吃着。</p>
+<p>诊所里面挂了几张照片，是一名西藏女军医，似乎是在拉萨的某个医院拍的，似乎是在彰显自己的医疗水平罢，微笑着，几个人簇拥着她。</p>
+<p>女军医出来了，后面就让我觉得似乎这个女军医偏好金钱多一些。来了一个人，说有个旅行团要让他们去帮忙检查一下高原反应。女军医开口便谈到了钱，还说起了上一次检查的故事。有的游客不愿意检查，有的游客不愿意诊治，等等。她因此要少收很多钱。啰啰嗦嗦的抱怨了一番。然后电话来电话去。我发现西藏这边大家非常喜欢用大屏幕手机，看上去应该是三星的note 2。</p>
+<p>我是第一个吊瓶的，但等我吊完的时候，所有其他病人都已经走了。医生给我开了药。然后说还要吊两次。药里包含有头孢、罗汉果之类的。一共165块钱。看个病的确还不便宜啊。这是我第一次花这么多钱看感冒。——以前感冒不要说去看医生，我连药都不吃的。偏偏这番感冒跑到西藏来发了。我自然希望能早点好起来。因为真的太难受了。</p>
+<p>我还去超市买了一个大的热水瓶。我发现在外面如果有热水的话的确会好很多，这个瓶子有1.2L，应该是很够喝的了。不过所占体积也很大。</p>
+<p>他们终于回来了。夔说不过也是在山下兜兜转转，我没去其实也没什么遗憾。不过我想那大概是安慰我的话罢。巧的朋友的鞋子坏了，我们先去买鞋子，然后还是在一家川菜馆吃饭。司机说这个饭店量很足，果如其然，正好似东北的菜馆一般。</p>
+<p>次日我们返程，我不得已必须上了车。这一路上，我们先去巴松措。到了景区门口，我们必须要换车，换了一辆大巴。一个大叔把窗户打开拍照。凉飕飕的风吹进车来非常难受。</p>
+<p>目的地有几户人家。我们到了观景台便是不断的拍照。而今的旅游似乎完全变成了摄影的经过。专业一点的拿着单反，而懒惰如我便是用手机，最多也是拿上卡片机这里拍拍那里拍拍。一个姑娘换上了当地的民族服装拍了几张照片。临走之前，我摆了张骑马舞的姿势拍了几张。</p>
+<p>回到停车场，我四处寻觅厕所。当地人告诉我可以到人家里去方便。那户人家的大妈却要收钱：一块钱。我发现西藏的人似乎特别爱钱。干什么都要钱。对此我的印象不好。</p>
+<p>西藏有一个很特别的地方：他们的猪竟然是放养的，就好像狗啊，猫呀那般。这里的猪浑身发黑，长得和野猪几乎无异。</p>
+<p>我们终于收兵了。这里的山路其实真的很难走。这司机开得非常猛。在车上晃得非常厉害。但便是这样，我们回去的时候还是耽误了很多。我们的午饭是直到下午四点才开始吃。</p>
+<p>回到拉萨的时候已经很晚了。我当时身体非常不适，吃过饭后，我决定去医院看看，顺便打一下吊瓶。都说吊瓶的话会好得快一些。但是结果并不如我所料。</p>
+<p>巧和夔陪我去了西藏自治区人民医院。这可是西藏最大的医院，应当是最好的医院了吧。我当时心里是这么想的。却不料后来遭到耗子他们等人的猛烈吐槽，戏谑说幸好我从这里捡回了一条命。</p>
+<p>究竟是大医院，人特别多。我挂完号后，在内科外面等了良久。里面充满了各色人等。不过看上去有不少是刚到拉萨，有高原反应的。终于几个人散去，我便进了房间。一个年轻的男医生正坐在那里给诸位看病。桌上还有一个不知道是测量什么的小仪器。把拇指伸进去便可。我正准备让医生看的时候，这个时候却进来了好几个，看上去是藏族人。一个年轻小伙子，几个人簇拥着他。我很不明白，不就看个病，为啥要这么多人围着？他躺在了床上，脸上浮现出异常痛苦的表情，仿佛要赴死那般。年轻的男医生便先为他看病了。虽然这小伙子是在我之后，不过看他那副很痛苦的样子，我也不好和他计较先来后到。我便坐在一边候着。</p>
+<p>但不一会儿，便又进来一个医生，一名中年女医生。她拿了我的病历，要给我看病。我便向她要求：我不要别的，只要打个吊瓶即可。——我以为感冒嘛，吊瓶几次便会好的。在林芝的时候，当地的医生如是说。我如实把这个情况告诉了医生。这个女医生看上去很不屑林芝医生的医术，说：“我不能随便给你开吊瓶的。除非你的肺坏的不行了。”她用听诊器听了一下我的胸口。“如果你要吊瓶的话，除非先去拍片。”“拍片？不用这么麻烦吧？”我心底暗想，不就一个感冒嘛，还要如此兴师动众？我怯得不行。因为真的很不想去拍片啊。拍片，就感觉像是被勒索过那般。医生听过之后，最后告诉我说我的肺一切正常。不过我需要去吸氧。“吸氧？”我的心底闪过一阵新奇的感觉。这个治疗可是我在内地很难会碰到的。“只要你有了充足的氧气，你便不会得肺水肿。”在西藏感冒，最惧的便是恶化成为肺水肿。医生开了方子，让我吸两个小时。两个小时？那得多少钱啊？我只知道个人买的氧气瓶，不一会儿就会被吸完。那么我要吸两个小时的话，是不是也得费不少钱呢？不过事实证明我的担心是过多了。一共花了六十多块钱吧。我不知道算多还是少。</p>
+<p>其时已经很晚很晚了，大概11点多，两个小时以后，都到1点了。我在吸氧室里，这里已经坐了不少人。看上去汉人居多，估计有不少是因为高原反应吧。我一直觉得自己不算高原反应，只是感冒吧。戴上了面罩，便安静的吸。我实在没有感觉在这里吸氧是多么特别的享受。其实也差不多。我并不喜欢戴着面罩的感觉。两个小时中，我的手机先没电了，于是我掏出了iPad。巧中间还给我电话，催我回去。他觉得吸氧大概是有点多余。而我们明天还要赶早去亚东。在这里浪费时间吸氧还不如早点回去睡觉养足精神。</p>
+<p>但我终究没有接到电话。实实在在的吸足了两个小时后便回酒店。回去后，我照例没有洗澡，直接躺下。真的好累啊。次日便是亚东之旅肇始。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-西藏之旅之始端——艰难的开始" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2013/06/23/西藏之旅之始端——艰难的开始/" class="article-date">
+  	<time datetime="2013-06-23T13:13:13.000Z" itemprop="datePublished">2013-06-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2013/06/23/西藏之旅之始端——艰难的开始/">
+        西藏之旅之始端——艰难的开始
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想去西藏已经很久了。原本我们同学间去年就计划着去了，但是拖延症一来，直到今年才真正成行。原本希望在西藏搞一个十周年同学聚会，不过到底还是太难。来西藏的同学一共九个。耗子和蓉蓉两夫妻，靖猪和肖琦两夫妇、寇、巧、夔和我。还有前番来过的佳媚及超。</p>
+<p>我一直觉得，西藏之旅一定要记录下文字，这里的经历，有太多值得记录的了。有和内地太不一样的感受。风景自然很好，可以用相片记录，但这里的感受，却非文字不能保存。我不由想起了钱老师送别梁岩和德杰时的泪如雨下。</p>
+<p>西藏的风景美得令人发颤，美得让我觉得相机都无法记录下着一切美景。我们一般都觉得相机拍的要比实景更美，但是在西藏，我却以为相机远远无法把真实的美丽的西藏记录下来。蓝天、雪山，这一切的风景都是那么令人心旷神怡。当然，除了风景以外，我觉得最不虚此行的是认识了这一帮在西藏支教的师弟师妹们。是他们，让我们的西藏之行变得更加丰富多彩，也让此行变得更加难忘。</p>
+<p>但是西藏此行的开头却是令我非常不快。我因故甚至在甫到西藏便得了感冒，咳嗽不停，我中间甚至想过是否要提早回上海。以前有听过类似的例子：感冒的话千万不能去西藏，因为这里的气候条件很可能会让你的身体变得异常恶化。不过真正经历下来，才发现其实也并没有想象中的那般可怕。</p>
+<p>接下来的这段描述就仿佛流水账。虽然时隔多日，但细节依然历历在目。</p>
+<p>6月7日下午，下班后我火速赶回家里。行李其实前一天晚上已经整理了一遍，不过是修修补补。一个拉杆箱，一个大书包和一个随身包。我拉杆箱里全部是换洗的衣物。后来想想，其实可能不需要带这么多的。我在开始的时候因为感冒，好几天都不敢洗澡。大书包在后面买东西的时候发挥了重要作用。随身包当时临时改成一个大的。为了多带点东西。——其实也许出门旅行简单一点会更好。</p>
+<p>时间差不多了，当时正好下雨。我担心打不到出租车。很幸运，出了小区门口就见到一辆出租车过来。还是带着客人的，看我拖着大包小包就停了下来，让我先上车。后来才知道那司机原来以为我会直接去机场，孰料我跟他说只是去龙阳路磁悬浮站——因为那样是最快的啊。司机大概很遗憾，没有拉到大生意。结果后来把我扔在车站老远的地方就下车了。我其实也搞不清楚磁悬浮站的具体方位，结果拖了行李跑了老远一段距离。</p>
+<p>托运、安检，然后就到登机口等待登机。而这个晚上，却不幸注定是不眠之夜。其实早该料到了。天气预报早就说过今天晚上会有大暴雨。果不其然，我深受其害。</p>
+<p>19:20，登机口的工作人员告诉我们：飞机已经着地，这个时候其他乘客也从非常准等软件上查明了飞机落地的消息。但是到19：50，我们被告知飞机又是刚刚着陆。这是怎么回事？于是又是等候。直到后面，他们告诉我们飞机并无落地，飞机已经在杭州降落。这是航空公司最严重的失误。如果航空公司可以明确告诉我们这个消息的话，那么我们也会考虑修正航班。</p>
+<p>这个时候乘客们还没有愤怒，因为天气原因，我们都可以理解。可是当后来航空公司通知21：10的航班准备登机的时候，我们实在是生气了。我们19：20的航班尚未离去，为什么让后面的乘客先行登机？而且最让人不解的是，这趟航班并没有坐满人。</p>
+<p>时间一分一秒过去，我们在候机厅里徘徊。这个时候我注意到身边的乘客在玩一个“疯狂猜图”的游戏。“这个是什么东西？”“阿根廷啊”——上面是一幅阿根廷足球队的队服，“我最拿手的了。”随后在微信上夜陆续出现了许多寻找答案的，我终于明白了。“疯狂猜图”这个游戏大概就在这一天风靡起来的。</p>
+<p>到了0点，我们仍然在祈望飞机能够起飞。但是杳无音信。我们听说川航已经把乘客用大巴拉往杭州。我们也提出要求，希望能够在杭州起飞。但是东航拒绝了我们的要求，并且没有说明任何原因。乘客们的情绪开始激动起来。</p>
+<p>“找你们领导！”激昂的声音一个接着一个。而且，巾帼不让须眉。女生们表现得尤其激越。一个女生哭诉着说：“我还要回去参加论文答辩，我已经一天一夜没有睡觉了！”但是东航工作人员仍然置之不理。那个工作人员反复的说着同样的话，“天气原因”不绝于口。可就是不肯提出解决方案。</p>
+<p>本来这个问题东航应该要提早做出预案的。因为天气预报早就说过当天晚上会有大暴雨。但是直到那个时候东航都没有告诉我们，航班取消了没有？是否把乘客拉到酒店去？乘客们最愤怒最激越的是其他航空公司都已经做了，可是东航却一直把我们晾在那边。“你可以自己出去改签。”改签，说的容易，可是如果其他航班已经满了，怎么改签？总之就是不想承担责任。我其实是不想去酒店的，我是希望今天晚上就能飞到重庆。我明早7：30去拉萨的航班可不要耽误了。有些乘客希望东航解决住宿问题。但是那个工作人员说上海的宾馆都已经住满了。”住满了？“乘客们不由提出质疑：”诺大一个上海，酒店会都住满了？“显然是不可能的推诿。</p>
+<p>我说：”首先，你们东航犯了一个严重的错误，明明飞机没有在浦东落地，你们却通知乘客说已经落地了。犯了错误就要承担责任，你们东航承担了什么责任？天气原因，这个我们可以理解，但是通知错误就是你们的不对了。你们到底要怎样承担责任!“面对我的质询，东航的工作人员哑口无语，不肯作答。</p>
+<p>东航迟迟不肯给出解决方案，于是就要乘客打110叫来了警察。警察来了也没用啊。他们也没办法强迫东航</p>
+<p>然后就有人开始动手了。一个情绪激动的男子冲上前去，就把这个东航的男子翻到在地。我闪身躲开了。我还是觉得动手是不宜的，于事无补，解决不了实际问题。东航男躺在地上，迟迟才爬起来。于是就有乘客吐槽说他是装的。警察要把肇事人带回警局，但是在全体乘客的阻拦下，他们终于没有这么做。</p>
+<p>接近1：00的时候，东航通知说航班取消了。我想这下完蛋了，去不成了。非常疲倦。于是大家在候机厅怒吼。”东航！“”傻逼！“”东航“”骗子！“叫骂声不绝于耳。我喊到喉咙都干了。到了第二天，几乎都说不出话来。</p>
+<p>乘客们显然不能就这么放过东航，于是继续威逼，最后请来了一个级别更高的领导。终于答应说早上安排一架航班飞。乘客们才逐渐平息下来。</p>
+<p>没有任何休息的地方，我坐在候机厅的椅子上，仰躺着睡着了。5：00左右醒来。然后一群人出了候机厅，去拿行李，再重新拿登机牌。我去要了一份航班延误证明书。办理登机牌的地方人很多。我还碰到有人是从西安转飞拉萨的，然后我想问他们，是否可以安排直飞拉萨的航班，既然重庆已经延误了。被航空公司拒绝了。事实上上海也没有直飞拉萨的航班，最直接的是从上海经停西安到拉萨。这个时候我们才知道，原来整个浦东机场有很多很多航班都被延误了。广州、武汉、长春……</p>
+<p>计划9：00起飞的，但是后来还是拖延了，到接近10：00左右才起飞。飞机上的空座明显留下很多。</p>
+<p>我在微信上不断报道情况。巧和夔他们早已乘早班机离去。我到了重庆以后急忙拿出身份证、航班延误证明书去寻找川航。川航安排了国航的飞机：17：40.这个时候我听到广播离传来：”飞往拉萨的航班延误，请乘客们到<em>*</em>集合，准备去酒店。“不知是国航还是南航的航班，比较之下，东航与他们真是云泥之别。</p>
+<p>我搭飞机很少很少遇到延误的。但这次，延误了整整14个小时。身心非常疲惫。关键是我本来就有点小咳嗽，被这么一折腾，我的身体愈发的差了。这也导致后面我在西藏几天都不能玩好，身体状况真的是非常差。</p>
+<p>在飞往重庆的航班上，我抓紧睡觉。我是随时随地都可以入睡的人。2个半小时，我一直在睡。</p>
+<p>17：40的航班并不能马上给我安排，因为乘客实际上都已经满了。我们是要等有的乘客没来，才能给我们安排候补。而且必须要等到17：10。因为只有到了那个时候，航空公司才有资格取消迟到乘客的登机权利。17：10，我赶紧到柜台去询问。这个时候有个姑娘正在那边办理手续。我当时还不知道她和我一样，也是要办理这趟去西藏的候补，我还希望工作人员能够帮我先处理一下。不过很幸运的是，我们两个人都有空位。</p>
+<p>工作人员告诉我来不及办理托运了，让我直接拿了行李上飞机罢。我赶紧拿了行李冲往安检。这个时候我才发现重庆飞机场的安检居然还有分A、B的。我简直要疯了。安检居然还要分不同的地方，就不能进了安检以后再分登机口吗？我赶紧拖着行李狂跑。因为只有半个小时啊，然后安检还不知道要多少时间呢。</p>
+<p>我万万没有想到，安检非常严格，甚至还要求我脱鞋进行检查。我心想：我上海过来都没有脱鞋子，怎么到重庆还要呢？后来想想，难道是因为要去拉萨的缘故？但是安检又不分你飞哪个地方。总之是让人有些不解，为啥要这么严格。</p>
+<p>于是等候。总算，这趟航班没有延误。我已经成惊弓之鸟了。总是害怕延误。</p>
+<p>一路的飞翔，一路的睡觉。巧提醒我说要保证体力，不然容易高反。到那个时候我还始终不肯承认我已经感冒了。我还是只认为我只是咳嗽而已。</p>
+<p>大概八九点左右，我终于在贡嘎机场降落。（后来我才知道原来贡嘎机场已经不在拉萨，而是处于山南地区了）出机场的时候还要查身份证。由于时间实在太晚，我一个人搭乘民航大巴。耗子告诉我说德杰会来接我。我到了终点以后给他电话即可。</p>
+<p>机场离拉萨非常远，足足走了一个小时吧。虽然时间已经很晚了，但是拉萨由于处于西部，其时天色未暗。我一路上仍然可以看风景。这里的山，和福建的山截然不同，虽然我们号称是来自山里的孩子。这里的山，很高，光秃秃的。这里也有河，河面很宽。</p>
+<p>到了终点，中间曾经有一个拉萨的朋友给过我电话，我以为便是来接我的德杰。便给他电话。但是后来才发现搞错了。他的声音口音很重，我甚至疑心他是不是西藏人。</p>
+<p>在车站终于接到了德杰的电话。这是我第一次见到德杰。他给我的感觉是很老实的模样，让我想起了旧时的朋友黄崇正。我们怎么也找不到出租车，只好搭乘了一辆三轮车走。我后来才知道，原来拉萨非常小的。搭乘三轮车到哪里其实都是十块钱足矣。</p>
+<p>我们下榻的是宏欣酒店。巧和夔已经开好了房间。我办好入住手续，酒店老板给了我一支烟，点上。随后到巧和夔的屋里先坐了一会儿。他们的房间很小。屋里还有一个人，是尼次。是我们02级的师弟。尼次问我们和耗子是什么关系。我们说同班同学啊。”那我怎么没见过你们？“”我是经院篮球队的，当时经常去耗子宿舍。他们宿舍的人我都很熟悉的“”我们跟耗子又不是一个宿舍的。。“尼次是一半的藏族人，不过他的汉语是很好的。他给西藏旅游的老板当秘书。林芝之行便是他安排的。我们缴纳完费用。尼次递给我一支烟。”抽烟，可以吗？“”没事的，抽烟可以帮你缓解高原反应。“这也不知道是哪里来的理论。那便抽上了。德杰问我要不要去耗子家坐会。其实我这个时候已经非常疲倦了，而且当时已经十点多了。巧和夔都不想过去了。我也就说先休息。</p>
+<p>回到房间，我的房间在一层。明显感觉要更大，我真是有点意外，还以为他们的房间是不是更便宜。（后来才知道原来是一样的）巧和夔都没有洗澡，我自然也不敢洗澡。就这么躺下。沉沉睡去。次日6：30便要起床。</p>
+<p>——待续</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-浙江游记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/life/2009/10/10/浙江游记/" class="article-date">
+  	<time datetime="2009-10-10T03:08:05.000Z" itemprop="datePublished">2009-10-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/life/2009/10/10/浙江游记/">
+        浙江游记
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="路途"><a href="#路途" class="headerlink" title="路途"></a>路途</h1><p>9月30日上午，彭小贵打来电话告诉我由于要去接一个朋友，要提前走。于是下午请过假之后，我便离开了办公室。</p>
+<p>回到家后，不过主要整理了一些衣物。因为此趟出门，我可能要在浙江呆上5，6日。衣服肯定是要带足的。但我放弃了带箱子的打算，最后还是用上了那个蓝色的背包。上次去北京的时候带上旅行箱还给吴杰嘲笑了半天：不过出来旅行，带那么大的箱子做什么？想来去浙江也没什么重要的事情，毋须带太多的物件。</p>
+<p>接上我之后，小贵开车去了机场，接上一名客人车子便向浙江驶去。一路上我无聊得玩弄着手机：准备了两个电池，所以并不担心手机没电的问题。不知道走到何处，我觉得无聊，便给大家出起了一些白烂的题目：其实就是吴宗宪的那些题目。</p>
+<p>蜜蜂停在日历上。猜一成语。我想这么白烂的谜语大概不是那么好猜的吧？</p>
+<p>“风和日丽？”客人问道？哦，天哪，这也太快了！</p>
+<p>下一个。</p>
+<p>动物运动会，赛跑。牛、兔子、猴子跑到终点都气喘吁吁，可是羊却没有喘气，气定神闲的样子。打一成语。</p>
+<p>略略思考了不久之后，又是客人回答：“扬眉吐气？”这反应也太快了！</p>
+<p>数字三，在地上翻了一个筋斗，接下来又翻了一个筋斗。猜一个成语。</p>
+<p>“三番五次”妈呀，这么快就逼近答案了？不对，是三番两次。一个让某人绝倒的题目就这样轻易被破解了。</p>
+<p>中文的谜语都猜完了，那就来点英文的吧。一幅画，画中的熊走了过来，我特别强调中间要用到英文。客人从小学的是俄语，所以这回没有太多办法了。小贵的老婆李冰是坐外贸的，熊，英语？她的联想力似乎比较有限，还是没有猜到。“有备而来。”我公布了谜底。备，bear，哦，真是够扯淡的！</p>
+<p>我胸中的谜语实在有限，只好打开手机开始搜索“吴宗宪 谜语”，搜到了55个白烂谜语。一路出着，一路猜着，打发途中的无聊。这时我的手机响了，是Connie的。妈呀，我可是在漫游啊，可是我又不好挂，她是失恋，心情不好，找我唠嗑，我怎忍轻易挂断电话？只好终止了我和诸人的聊天，在昂贵的漫游中度过了一个小时，直到车在天台停下，送走客人。我当时不太方便了，挂上了电话。</p>
+<p>之后车子驶入了服务区，我看到了绍兴臭豆腐的字样。“绍兴臭豆腐？”我一直很疑惑，臭豆腐是始于哪里的？在龙岩的时候看到了山东臭豆腐，在其他地方又看到了长沙臭豆腐，到底起源是哪里呢？李冰说绍兴的臭豆腐是很有名的。哦，是这样的啊？</p>
+<p>买上了两盒，一共20元。聊解肚饥。李冰可真是吃多了，因为到后面晚餐的时候竟然已经吃不下东西了。</p>
+<p>大概在21：00的时候，终于到达了台州，是三湾。我看到了三湾核电站，三湾竟然有核电站？长期以来我只知道秦山核电站和大亚湾核电站，据说福州那里也有核电站了。目前看来核电站是很多了。</p>
+<p>晚饭是在郑徐兵老婆林丽娘家用的。另外见到了一对人和一个小女生，都是从上海过来的。桌上摆的几乎全是海鲜，鱼啊，螃蟹啊，虾啊。我对海鲜着实没有太大兴趣，喝过两碗酒，吃罢东西诸位没有再多打搅便兀自退了。郑徐兵也要走，也要住酒店。而且是和我同屋。郑徐兵似乎真的不太讲究，吃饭的时候还说让我做伴郎，我说着也太突然了吧，连衣服都没有准备呢。他说需要准备什么衣服呢。我想大概是玩话吧。</p>
+<h1 id="婚礼"><a href="#婚礼" class="headerlink" title="婚礼"></a>婚礼</h1><p>我素来是早醒的，但是我醒来的时候郑徐兵也似乎已经起来了。要去接新娘了，我没有跟随过去。他让我十一点的时候到楼下去看新娘过来。我只好在酒店里看阅兵式。</p>
+<p>阅兵式很是无聊。胡锦涛乘着轿车沿着长安街走了一遭，不断的喊着“同志们辛苦了！”之类的话语。我心中尤为同情，都是国家首脑了，可是在这种场合下偏偏不能自由的说话，非得说这些废话。不是我大不敬，我的的确确有一种傀儡的感觉。当然这应该只是我的错觉。我便仔仔细细的观察锦涛同志的汽车，看过来看过去愣是没看到车子是什么牌子的。这种场合大概不会用的是进口车，应该是红旗之类的？车的品牌是没看到，不过车牌我是观察仔细了：“京Y-02009”。我直纳闷了，为什么是京Y呢？我老觉得京A是最牛屄的！或者挂个“中A”什么的也挺牛的，（“中”自然是中南海的简称）京Y？这都排到哪里去了？等他回到天安门的时候，我没有太多的耐心去听主席的讲话。</p>
+<p>后面大概是分列式吧，我看时间差不多了，就下楼去了。在下面蹓跶了一会儿，没有见到半点动静。还没到啊。酒店的大堂也没见到迎宾的人。这个郑徐兵，整的有点简单了一些。</p>
+<p>这里我真的是没有什么认识的人，陌生的地方陌生的人。无聊的坐在大堂的沙发里看电视，咦，好像是飞机飞过了。CCTV的播音员无聊的在讲着些废话。难道分列式已经结束了？我一直期盼着看一下女兵呢。可惜这次直播的时候没看到，以后重播的时候我也没看到。上网搜也没搜到专门的女兵的陈列。错过了错过了。</p>
+<p>新郎新娘终于到了，我上了前。见到了万阿俊，就在郑徐兵的身边。他大概就是今天的伴郎吧，拖着个行李箱上了楼去。</p>
+<p>裤兜里揣着两个红包，不知道何时给出。看看门口似乎没有收红包的人。我只好回到座位上继续观察。几个人在包红包，看样子都还不小。一张一张的往红包里塞。</p>
+<p>时机差不多了，我再次迎了上去，只见郑徐兵和林丽手中拿了几个红包。我把我兜中的红包递了过去。然后站在了阿俊的旁边。阿俊给过了一支烟。</p>
+<p>楼下站了一会，我便去了4楼。婚宴将在4楼举办。我四处望去，试图找到沈灏。此时此地，我认识的只有他一个人了，而我也有6年未见过他了，不知道他是否大变样了。</p>
+<p>小贵见到了我，把我叫了过去。我问他：沈灏呢？“他走开了，一会儿回来。”小贵答道，“你先在这坐着，他回来后你再过去。”只能如此了，不然这里一副“举目无亲”的样子，还的的确确煞是无聊。</p>
+<p>很快沈灏就映入了小贵的眼帘，沈灏其实也没大改变，最多可能变胖了一点。我去了沈灏的那一桌。桌上已经摆好了食物，我端的坐下。两个人竟喝起了王老吉。好生无聊。而沈灏竟然拿起了筷子开吃了。婚礼还没开始呢！</p>
+<p>沈灏和我也没有太多的话要说，虽然很多年不见了。似乎他一贯的作风便是如此。有点意外的是他竟然还带了本书过来，一看竟然是《三国志》？我多少年前买的《三国志》，到了今天也没有整本看完。沈灏的这本《三国志》竟然还是竖排繁体版的。真真是佩服死了！想想二十四史我只不过读过《史记》而且大半都已经忘却了。因为有相当部分内容其实可能是囫囵吞枣的，《史记》都是文言文的，阅读太累了。我忙询问沈灏，“《史记》看过了吗？《资治通鉴》看过了吗？”他对这个话题似乎并没有太大兴趣，不咸不淡的“嗯嗯”答道。</p>
+<p>婚礼开始了，司仪据说是董事长的秘书。还真是挺能说会道的。哗啦啦讲了一大堆的誉美之词，对郑徐兵的评价尤其之高，才子。也难怪，他到底是当年江西省的状元嘛。新郎新娘照例要在台上讲一通话，林丽在台上似乎激动得说不出话来了。可能此刻的她过于感慨万千了。郑徐兵也讲了一大通。婚礼上的场面话大抵都是这些吧。我觉得有些遗憾的是他们这些话都是从网上搬来的，郑徐兵怎么说也该自己写几句吧。</p>
+<p>终于我也开始动筷子了，喝酒。啤酒吗？我实在不想喝。桌上其实摆了一瓶白酒的。泸州的什么酒。没有白酒杯子，只好拿了一个大杯子。咕噜咕噜的倒上。桌上没有任何人喝白酒的，我想大概今天就意思意思好了，指定喝不了多少的。孰料竟是个意外，我后面竟然还是给喝趴下了，不过可能喝得实在是有点多了。</p>
+<p>桌上的食物也大抵是海鲜，我吃的也不多。不紧不慢的喝着杯中的泸州酒。年初的时候我便是醉倒在泸州酒下的，这个时候我是没有料想到我会趴下的，实在不是我贪杯。实在是，大概是过于爱面子了。</p>
+<p>婚礼中还有节目。主持人让大家往自己座位下的四个椅子腿没过去，哈，我摸到了一朵蓝色的花儿，象征着幸运观众之类的意思。我便上了台去。有什么奖品呢？不得而知。</p>
+<p>这个幸运观众是每桌都有一个的，上来几个人，主持人让我等排成了三列。然后是新娘往后扔一朵花。主持人说谁拿到这朵花谁将获得今天的幸运大奖。大奖是什么呢？我也很期待。不过往后扔花的习俗似乎是西方的，象征着下一个要结婚的人。我是排在外面列的，拿到花的可能性是极小的。中间的前排都是些小孩，总不成要结婚的是他们吧？不过看样子他们似乎也并不是照西方的这个习俗走的，只不过做个场面撑个热闹罢了。</p>
+<p>花扔出来了，果不其然一个小孩子得了。游戏结束了，我回到座位了，不想还没完。主持人还要继续为难这个小孩，说要他送出十八个祝福。乖乖，十八个，我也不一定说得出来，何况小孩呢？“花好月圆”“白头偕老”“百年好合”?我似乎也想不出更多的祝词了。</p>
+<p>但是这个小孩愣是说完了十八个，虽然有些我觉得挺勉强的，不过总算是过关了。奖品是一个心形的抱枕。</p>
+<p>沈灏的老板把他叫过去了，沈灏顺便把我也叫过去了。他可能觉得我能喝酒，把我叫过来撑场面吧。据说这里在座的都是他们行里的领导，那么我自然不能太拘谨了。</p>
+<p>这个行长，那个又什么什么领导。他们杯中的似乎并不是酒，但我还是得把我杯中的酒喝掉的。我当时还在想，是不是要一个一个我先敬过去呢？踌躇了很久，不敢动身。但是单单他们领导拿过来敬的，已经让我着实惶惑了。一杯白酒下肚了，还好我还清醒着。他们几位见我能喝酒，便问道我是哪里人。我想这里是台州，便说自己是绍兴的。“绍兴的啊，黄酒的故乡，难怪这么能喝了。”只听到有人这么议道。“黄酒？”我这辈子可是没怎么喝过黄酒，我也没好道破其中的玄机，只好嗯嗯啊啊。后面又不知道是谁过来敬酒，糊里糊涂中我不知道又下肚了多少酒。但在上楼之前，我想我是清醒的。</p>
+<p>新郎新娘过来敬酒了，天哪竟然是王老吉。我彻底懵倒了！怎么可以这么明目张胆？看来这里的确没有太旺盛的喝酒的习俗。就算做样子也要做一做嘛，也没有酒保护卫，直接就是王老吉喝到底。这样太无趣了。我又是白酒陪了过去。白酒，我可能是场内喝得最多的一个了。据沈灏说我大概喝了八两。</p>
+<p>郑徐兵交代过下午两点半要退房，我眼见时间快到两点了，便跟沈灏说要上去拿东西，退房。这个时候的我应该还是清醒的。进到房里收拾好我自己的东西和郑徐兵的东西，但是关键的一个充电器忘记拿了！踉踉跄跄的回到了4楼。这个时候我的意识已经开始逐渐模糊。我不知道是如何上了沈灏的车子。但是我记得开车的是一个女生，而前排副驾上坐的也是一名女生。</p>
+<p>我在车上大概说了很多话，我酒后是非常多话的。但是我不记得絮叨了什么。可能在说完话后我就躺倒了。后来阿俊和沈灏是怎么把我送到宾馆的，怎么把我弄到床上的，我已经完全不记得了。沈灏原先还说的，晚上我们再去喝！我还答应得好好的。孰料到我竟然是一醉不醒。</p>
+<p>我是到2，3点才醒过来的，一查手机有万阿俊的几个未接来电。大概在八点多的时候，那个时候我正在熟睡中呢。他不如干脆直接到房里找我！我醒过来之后才发现手机的充电器落在郑徐兵结婚的宾馆了，只好寄希望明天沈灏过来的时候帮我解决了。</p>
+<h1 id="酒醒次日"><a href="#酒醒次日" class="headerlink" title="酒醒次日"></a>酒醒次日</h1><p>早上沈灏过来了，我便告知了充电器落在酒店的事情。我期盼着他能够带我回酒店去拿，孰料他只是说他给酒店打电话，让我给出上海的地址好让酒店给我寄回充电器。啊，不能直接拿回吗？我心里很奇怪的，“三门湾离这里很远？”我问沈灏道，“嗯”，沈灏并没有多说一句话。我才想起昨日从酒店到林丽的家貌似开车也是开了很久很久。</p>
+<p>反正这日我是会留在台州了，好容易过来台州一趟，不同这些老友多呆一日也说不过去。等到阿俊过来之后，我们便先驰车去喝茶了。</p>
+<p>沈灏叫了水果茶，我的则是碧螺春，阿俊的是安徽的什么茶，一边嚼着瓜子，有一搭没一搭的聊着。沈灏到底不大愿意说话，我们也没有提起太多过往的故事。沈灏也没有说太多自己的故事。一时我其实也不知道说什么才好。</p>
+<p>中午吃的是川菜，喝的是啤酒。喝到后面我实在是喝不动了。然后各回各住处。到了晚上再出来活动。</p>
+<p>晚上是去椒江吃海鲜。这顿我很喜欢。不过我闻到了炒粉的味道，于是让店家给一份炒粉。不想店家竟是不做炒粉的，需要外卖。其他的海鲜都很不错，有小黄鱼、虾……最好的是一个豆腐，我狂喜欢。有蒜头。沈灏点了很多菜。真是吃不完。不过这顿我觉得吃的比婚礼上要惬意的多。</p>
+<p>吃罢海鲜，驰车返回路桥。沈灏把车开到了一家酒吧。在一个封闭的屋子里。点了一箱酒，和一些食物。其实我已经吃也吃不动，喝也喝不动。万阿俊先自回去。沈灏和他的同事吴子龙喝得比较多。我觉得肚子已经撑得不得了了。出门的时候不得已吐了一下。不过很多年前我喝啤酒是一定会吐的。这段时间以来我已经算吐得很少的了。其实我也搞不明白，吃、喝成为一种礼仪和负担。不吃、不喝总是觉得有点对不住主人似的。于是吐一吐可能会更为好过一点。诡异的逻辑。</p>
+<h1 id="前往嵊州"><a href="#前往嵊州" class="headerlink" title="前往嵊州"></a>前往嵊州</h1><p>在台州也算呆了两天了，其实台州可以去的地方实在太少，在这边只是吃吃喝喝，也没有太多有意思的事情。我其实很想做一做按摩的，不过看他们平时似乎也很少做这个的，我也没好意思提。肩膀很痛，背很痛，如果按摩一下一定会好过很多的。</p>
+<p>在台州吃过午饭，我买了票独自前往了绍兴嵊州。这里是我的祖籍，但是我毕竟来得太少，这之前我只来过一次，我不知道是否能够找到去的路。所幸郑春林正好在三界，就在下王的旁边，这一回我索性先去寻他好了。</p>
+<p>等到我见到春林的时候，他已经胖了不少了。据他自己说和毕业的时候相比是胖了20多斤了。当年他的的确确是很瘦的。到春林家的时候正好是中秋，他母亲、他弟弟和弟媳妇以及他的侄子在家。家境还是比较困难，从饮食当中也可以看出比较简单。但还是有给我开了一瓶啤酒。——似乎做客总是要喝酒的，虽然我在家从来没有喝酒的习惯。</p>
+<p>春林的住处也很简单，只有一台笔记本，并不能上网，和两本三字经的书。我有点纳闷他的书怎么会这么少。但也没有细问。</p>
+<p>月朗星稀，这夜的月亮正好是满月，皎洁的月光洒落在这一片大地上，并不要希图看到繁密的星空。我早早的入眠了。</p>
+<p>次日五点钟我醒来的时候春林还在熟睡当中，我拿手机上网，磨蹭了半天。终于食过早餐。在外面蹓跶了一圈，就此告别。春林说去下王的桥由于塌方不能走了。此次去下王必须要先到嵊州城里在客运中心买票去下王。</p>
+<h1 id="拜访下王"><a href="#拜访下王" class="headerlink" title="拜访下王"></a>拜访下王</h1><p>到了嵊州，我想要给善庆叔买个礼物才好。但是我沿着客运中心的马路走过去，并没有见到购物的地方。只好掏出手机打开GPS定位系统，终于发现西边有购物中心，就此走过去。</p>
+<p>走了700米，看到了上海华联超市，挑了半天挑了一盒蛋白粉。其实我也不知道这玩意儿能有什么用，只是记得健身的时候教练总是推荐买这个蛋白粉那个蛋白粉的。我不管这许多，提溜着去客运中心买票去了。下王的车票是7块钱，看来要比三界远一点。</p>
+<p>在车上迷迷糊糊的，这里的山并不高，但是一座连着一座。可能不到一个小时，到达下王。我叫了一辆摩托车驰往下王。5块钱，春林交代过的大概是3-5元的样子，我没有多讲价。跨上去兀自走了。</p>
+<p>虽然他说是五里地，但我还是觉得走了老远。不久便见到了一条小河。房屋沿着河的两岸而建，这的的是7年前我印象中的场景。但是我不知道从那条巷子进去，下车询问。最为痛苦的是语言。这里的村民似乎都不说普通话的，操着满口的当地方言让我理解非常困难。我把钱给了摩托车师傅，自己一个人跑去打听了。</p>
+<p>找到一个人多的地方，问善庆家在哪里。竟然真的知道。“往下走，就在前面那座桥上来一点。”我忙着道谢，一面走向了前面那座桥。村里的人真的很少，我找了老久终于找到一户人家，问善庆家在哪里。这家的女主人直接领我去了。</p>
+<p>等我见到善庆的时候，果然是他。和我印象中的并没有太多变化。只是，步履变得更加蹒跚。我觉得他真的是好似爷爷的样子，他其时正坐在厨房里的一张椅子上，桌子上摆着一碗菜。（我一开始以为是茄子，后来才知道是猪肝）见到我并没有太多矫情的喜悦，淡淡的问候。然后把几块钱给了领我过来的女人家，大概是让她买些什么食物之类的。</p>
+<p>他吃的真是简单啊。一碗猪肝竟然就是午餐的全部？再看屋内的摆设，一切的一切都是那么的简朴。和当年的印象并没有太多的改观。看到他步履蹒跚的样子，我不由有一种心疼，我想为他做些什么，却不知道能做些什么。我只是一个来自远方的来客，甚至很多年很多年才可能过来访问一次的。</p>
+<p>那位女人家买回了鸡蛋和粉丝。煮好了端上来便是我的午餐。虽然不是太合我的胃口，但是此情此景，我又能做何挑剔呢？善庆叔自己本身就是行动很不方便了。家里又没有其他什么人。他说他自己也是刚刚从宁波回来不久，老婆去宁波给儿子带孩子去了。他说自己有高血压。我心底直打鼓，他怎么可以一个人住着呢？怎么可以没有人照顾他的生活呢？我其实很想我来做晚餐。我做的菜肯定要强很多。但是心中又顾虑颇多：如果我这么做的话，是不是会让人觉得我在嫌弃他家里的什么？思虑再三，还是放弃了这个念头。无论如何，我是客，都不适合做太多越俎代庖的事情。</p>
+<p>隔壁住的是另外一个叔叔，善庆告诉我他叫元庆。“元字辈的啊？”我记得爷爷告诉过我家里按照元亨利贞来排辈分的，我是亨字辈的。（我要是真的叫童亨征那得多怪异？连我爸都没有按这个辈分来取名字了何况我呢）善庆称是。还真的是我叔叔辈的。在善庆叔家用过午餐，元庆叔便让我过去他那小坐了一会儿。打开电视让我看电视。我对电视其实并无太大兴趣。但盛情难却嘛，我从来不轻易做推辞的。</p>
+<p>元庆叔后来大概是出去了，因为我坐在躺椅上睡着了，也不知道过了多久。善庆叔叫起了我，让我到他的厨房去。他拿来了一袋瓜子，这个我可喜欢，于是我嚼了一个下午的瓜子。瓜子皮堆成了一座小山。打扫干净。</p>
+<p>晚餐还是在善庆叔家用的，多了几个菜。一共有四个菜。猪肝是照例的，（我真的不喜欢吃猪肝）一碗毛豆，一碗鸡肉，（我后来才知道鸡肉是善庆叔另外买的）和两个炒鸡蛋。炒鸡蛋是我的最爱。喝过善庆叔给我开的啤酒，我把炒鸡蛋就饭吃了。我想善庆叔大概是喜欢吃猪肝的。我只是象征性的吃了一口，筷子便没有再动过猪肝了。</p>
+<p>用过晚餐，我向善庆叔说出去走走。——我很后悔下午竟然没有出去，此刻出去已经晚了，马上就要天黑了。然后便踏过门槛出了门去。</p>
+<p>从门口的巷子穿出来，巷口是童氏祠堂。据说家谱在发大水的时候已经遗失：再也见不到祖宗的名字了。我对祖先的了解也仅限于曾祖父。（但是我连他的名字是不知的）曾祖父毕业于杭州法政学堂。后来在新昌任职。爷爷一共是兄弟四个。他好像是排行老三。善庆是他二哥的儿子。善庆叔告诉我说他3岁的时候就没了父亲。好是苦命。老四去了温州。老大似乎略微识得几个字，曾经在村里还是镇里做过小官的职务。其实算起来曾祖父的文凭当是很高的，甚至要高过爷爷的高中文凭。法政学堂，大概相当于今天的大学本科吧。为何他的后代子孙有这么多文化程度都不是很高呢。就我所知的善庆叔和元庆叔似乎都不算太有文化。善庆可能略微好一些，还任过小学老师。但是元庆似乎并不多认识几个字。我感到最最痛苦的是为什么他们都不会普通话？因为我觉得跟他们沟通好困难好困难。可能除了爷爷的大哥这一系之外，其他几兄弟的后代都没有混得很好的。看这里的模样甚至可能并没有强过我们家。</p>
+<p>这里的水还是一如既往的干净。山村的夜是宁静的，只听到淙淙的水声。我在河边循路而上，其实也不知道能够在这个山村发现什么了。上个世纪，爷爷就是从这个小山村走出来，到他乡求学。适逢鬼子侵浙，爷爷去了临近的福建。隐约记得爷爷到达福建的第一站似乎是闽北，后来不知如何去了长汀，在那里结识了奶奶并就此成家立业。在过去的几十年里，他可能受尽了磨难和痛苦，但在我的记忆中他似乎并无太多的牢骚和怨言。我一直是不太理解爷爷的。我印象最深的还是他在80多岁的时候写下的四个字“知足常乐”。这四个字预示什么呢？他似乎对生活并没有太多的索取和要求。很简单的生活就可以满足。由于时代的问题，我想在他身上总是有一些我所难以理解的创伤。其实这个山村对于爷爷而言，可能意义也是极小极小了。虽然他在这边出生成长，可是他的大半部分时光都是在福建度过的。在他离开故乡的几十年里，他一共也没有回来过几回。奶奶更是一生也未曾踏上过这片土地。我其实也不太明白自己到底希冀在这块土地上找到什么。这里是没有一分一毫的爷爷的痕迹的，爷爷不是名人，没有人会刻意的保留什么。有太多太多的东西已经被时光带走了。</p>
+<p>月光如练，天际是两条白云横挂在半天空。山间是永不停息的虫鸣声。我掏出手机，欲找下这山间的夜景，倏尔想到我的手机的拍摄功能是极弱的，在如此暗淡的光线下，我用手机其实什么都拍不了！</p>
+<p>我过了桥。在对岸的路上循路前行。直到走到一块豪宅的门口，听到了一群的狗叫声。我尽管并不怵狗，它们不过是被关在房子里的畜生，但是如果是一条就罢了，是一群我的心底还是在打鼓。终于我转头回去了。月色映着水面，波光粼粼。小河两岸的路灯照在路上，映出我身后狭长的身影。远处的山上一片漆黑。这种漆黑是在城市里无论如何都体会不到的。</p>
+<p>回到善庆叔家的时候，他已经不在厅里了。我到元庆叔家坐了会儿，见到他打了呵欠便要告辞。我不知道今晚卧于何处。元庆叔过去叫醒了善庆叔，安排好晚上的床。这个房间也极为简陋。我点上了蚊香，打开了手机。时间实在是太早了，不过这个时候在这山间又能有何娱乐活动呢？我用手机上网看了会儿网络小说，很快也躺下睡着了。</p>
+<p>次日早晨用过早餐之后，我随了元庆叔出去看了看他的田。元庆叔告诉我说这里有漂流，每个人98元/次。比我们上次去安吉漂流的要来的贵。元庆叔的田地并不多，他说一家大概只有2亩这样子。他们一家四口人，平均每人不过才5分地。这里的水稻只种一季。元庆叔告诉我说这里现在还是用手工收割稻子。那样，太辛苦了吧。我虽然从来没有下过田地，但是感觉干农活应该还是非常累人的吧。元庆叔在稻田边的水沟挖开了一道口子，水汩汩的流出了去。水流净了才好方便收割吧。</p>
+<p>在外面走了一遭以后，我和元庆叔回去了。回到家门口的时候便见到一群的村民在门口的石凳上唠嗑。我其实已经很想走了，在农村我不知道能做什么，很是无聊。下一站，绍兴。嵊州虽然是绍兴的一个县级市，但我并没有到过真正的绍兴城。这一回，我要去看看，到底绍兴城是怎样一副模样。</p>
+<p>我同善庆叔说了要走的想法。善庆叔并没有多说什么，只是说吃过午饭再走吧。我没好拒绝，虽然其实我很想立刻就走。我总是不太擅长做拒绝，或者我总是自以为是的不忍去做拒绝。</p>
+<p>午饭还是在元庆叔那用的。照例是喝了一点啤酒。吃过饭。元庆叔的菜也是极为简单的。他老婆不在家，一个人大概没有做太多的讲究。用罢午餐我就动身离开了。</p>
+<p>在河的对岸善庆叔和我一块等车，遥见善庆叔在对岸步履蹒跚的走出来，正站在祠堂的门口。我向他挥了挥手，做告别状。11：40左右，巴士过来了，我登车离开了这个祖辈生活过的小山村。</p>
+<p>我不知道在这边寻找到了什么。这里的见到的亲戚也就只有善庆和元庆两位叔叔，他们的子孙都出去了，这时节都没有在家。至于其他的亲人，似乎也没有太多的往来。我实在不知道在这边能够寻找到什么。也许以后很长时间我可能也不会再回来了。我的身上留下的只有这里的血脉和我的姓，除这两者以外，我和这个小村再也找不到更多的联系了。这里甚至连家谱都让洪水给冲走了。</p>
+<h1 id="绍兴之旅"><a href="#绍兴之旅" class="headerlink" title="绍兴之旅"></a>绍兴之旅</h1><p>在前往绍兴的途中，我打电话定好了住处。绍兴国际青年旅舍。我对上海的国际青年旅舍是抱有良好的印象的，我也去过杭州的国际青年旅社，条件上比上海的差一些，但也还可以接受。这次到绍兴，我想大概也不会相差太多。</p>
+<p>驱车前往绍兴，在绍兴汽车东站下车以后我便打好电话寻明道路。原来这家旅社在绍兴饭店的旁边。“绍兴饭店”，这四个字听起来委实大气，想来是一家大酒店。国际青年旅舍莫非尽是依附于这些大饭店的旁边？人民广场的青年旅社旁边也是大酒店：万豪大酒店。</p>
+<p>登记入住。刚刚打开房门我就失望透顶，屋子很小很逼仄，其他床什么的倒是和其他地方相差不了太多。我舟车劳顿，便去洗澡。只有一个澡房，也没有放衣物的地方。尤其奇怪的是水龙头比较奇怪，不是通常的拧开式的，而是触按式的，我捣鼓了半天才明白怎么弄出热水来。洗过头和身子。我回到房内。此时房里已经入住了两人，但是房内并没有人。我只见到一双红色的人字拖摆在地面上。旅社的人说房内还住有两名女生。大概这双拖鞋便是一名女生的。另外有一个旅行包摆在地上，看那款式着实像是女生的。我整理好行李，便背好小包出门去了。</p>
+<p>问过前台，说此时天色已晚，推荐我去沈园。我没有做好充分的准备工作，既然前台做如此推荐那么便依他指引行事。出门搭上了7路公车，到达沈园。</p>
+<p>在沈园门口转了一转，才要去买票的时候却告知沈园马上就要清园子了。要来的话只能看晚上的沈园之夜了。上面写了各种票价。我这个时候以为沈园之夜大概是需要140元的，里面似乎准备了各种演出。好像是贵了点，但是还是要去瞅一瞅的。</p>
+<p>我在沈园门口瞎转悠的时候，几个人在外面拉客。说是参观绍兴的各种风景。我其实还没搞明白是怎么回事呢。一个说30元带我去游览。他的口音很重，我当即也没反应过来是哪里的口音。我想还有好一段时间沈园之夜才开始呢。30元？还好也不算太贵吧，兀自答应了。</p>
+<p>后来才知道原来只是用三轮车带着我去参观绍兴的街道。其实这些我们自己也可以去的。只不过有三轮车省却了步行之苦。</p>
+<p>似乎从沈园过去还好远。我只觉得过了老久终于到达了一个桥边。那个蹬三轮的便开始了导游般的介绍。之前我问过他是哪里的，他说是河南信阳。我当时就有一阵发愣，他竟然直接开口承认自己是河南的？我以前认识一个人，分明口音可以辨识出是河南的，却死活不肯承认。大街上也有很多河南人，口称自己是其他地方的。这个人我甚至还没来得及辨识出他的口音，已经自己招认了自己是河南人的身份。看来可能还比较老实一点。他的口音太重，我听他讲解着实费劲得很。</p>
+<p>这里真的是水乡的味道很重，水的两岸是住家，桥头还有酒旗飘扬。“水仙酒楼”四个大字在夕阳中摇曳着。蹬三轮的带着我穿街走巷。中间还去了一个酒馆。他不断的介绍这里是《冬至》拍摄的场景，那里是《拿什么拯救你我的爱人》的拍摄场景。这两部连续剧我都没怎么看过，自然没有什么兴趣。最后来到了一个码头，乘坐乌篷船的。价格不菲。我想还是乘坐沈园那边的好了，虽然短了一点，但是其实长了也没什么意思。就当尝个鲜好了。乌篷船有一个特色是船夫是用脚来划桨的。</p>
+<p>大概一个小时之后，我们重新回到了沈园。我交了30块钱后便去买沈园之夜的票。售票的建议我买通票，我之前倒是看到了通票的广告，但是因为时间所剩不多。售票的告诉我明天还可以继续用，既然如此不如买了通票好了。一共是98元。之后还可以换一串铜币，上面写着“沈园通宝”。</p>
+<p>进入沈园之后，夜色已近黑了。园内的灯光逐渐亮起。人也不少。沈园的典故和陆游有关。很久之前见过陆游和他的表妹唐婉的故事，不过是很遥远的事情了，记不大清楚了。到了沈园这个故事才又重新在我脑海里逐渐清晰开来。颇有一点梁山伯与祝英台的味道。陆游和唐婉结为夫妇之后，因陆游的母亲不满唐婉耽搁了陆游的学习和求取功名之路，强令陆游休妻。（唐婉可还是媳妇兼外甥女啊，陆母竟然自己兄弟的面子也不讲，非要拆散这对夫妇）于是演绎出一番现实版的梁山伯与祝英台的悲情故事。（梁山伯与祝英台的故事根本就不是空穴来风，两个人压根就不是一个朝代的，只不过两人被葬的坟墓相隔太近于是后人便编撰了一个故事，不知道可否有何影射）。我只知道这里晚上有节目。循路前行。</p>
+<p>园子里摆满了椅子和凳子。座位的前面是一个小池子，小池子前面有一个戏台。大概今晚的演出就是在这个戏台展开。隔水看戏，倒是别有一番滋味。似乎是古人的一个特色。观众已经不少了。我寻了一个凳子坐下，位置有些靠后。但且不管，有位子总是好过没有。耐心等待到19：10，节目正式开始。</p>
+<p>首先上来的是两名家丁，然后上来一名自称沈园老管家的人。在台上讲了一番话。不久便出来了陆游和唐婉。唐婉的扮演者似乎长得一般，而陆游的扮演者似乎还更加清秀，更加好看。陆游和唐婉的故事走的大概是越剧的路子，里面的演员大概都是女的。</p>
+<p>中间念过几首陆游和唐婉所做的词《钗头凤》，我试图去当场记忆，却发觉记了下句忘了上句。无论我如何施展我的注意力，我似乎都不能记全。我又一次觉得自己年纪大了，记忆也开始不中用了。几度我的记忆力很强的，能够快速完成记忆的。不由生出一阵哀叹。</p>
+<p>其实本晚的节目就是大杂烩。不仅有越剧，还有黄梅戏、沪剧等其他剧种。中间居然还有齐天大圣孙悟空。主要还是女演员为主。曾经有人说越剧是他最喜欢的剧种。爷爷来自越剧之乡的嵊州。他在世的时候也煞是喜欢越剧。而我对戏剧是没有提起半点的兴致来，也许我该去多多的接触一下越剧。</p>
+<p>印象最深的可能还是孙悟空。他那根棒子使得着实熟练，看得我眼花缭乱。其他的花架子我倒没有多大兴致。孙悟空居然玩起了剑，虽然技巧性也很高，但毕竟离孙悟空的形象甚远。</p>
+<p>其他的节目还有十八相送，还有流行歌曲。管家居然唱起了现代的嬉皮风格。不知道该说他有趣还是庸俗。有一点点穿越的味道。</p>
+<p>节目大概持续一个小时，一群演员出来向观众致意。管家说还有下一场同样的演出，我们第一拨观众先行退场。我离开这个院落去参观了其他院落。</p>
+<p>旁边是陆游纪念馆，陈列了陆游的故事。我草草的一看，又重新退回去，因为可能刚才进门的时候有些地方并没有去过。</p>
+<p>外面的园子里我看到了题于墙上的《钗头凤》：</p>
+<p>“红酥手，黄藤酒。满城春色宫墙柳。东风恶，欢情薄。一怀愁绪，几年离索。错、错、错。<br>春如旧，人空瘦。泪痕红浥鲛绡透。桃花落，闲池阁。山盟虽在，锦书难托。莫、莫、莫。</p>
+<p>世情薄，人情恶，雨送黄昏花易落。晓风乾，泪痕残，欲笺心事，独语斜栏。难，难，难！<br>人成各，今非昨，病魂常似秋千索。角声寒，夜阑珊，怕人寻问，咽泪装欢。瞒，瞒，瞒！”</p>
+<p>唐婉真是个可怜儿，待到和陆游重逢时，结果却是抑郁而终。封建礼教，功名利禄。陆游并未能去把握自己的命运。陆游和唐婉的故事并没有在我心底掀起几番涟漪。到底这样的故事和我相隔太遥远。现代社会中，大概很少有什么母命难违的故事了。</p>
+<p>出了沈园，大概已经八点多了。我没有等到出租车，却看见了公车，于是返回住处。</p>
+<p>天色还早，我却不知还能去往何处。旅社附近并没有多少闹市。我只好上床打开手机阅读电子书。出门旅游在外，空闲时我可以打发时光的唯有手中的手机。</p>
+<p>不久之后门边便有动静。进来一人，开头向我说话。在青年旅社里我一直没有和人说话的习惯，至少在杭州的时候是这样。但这个女生却着实健谈。和她的对话中，我才得知她原来竟也是从沈园之夜归来，只不过她看的是第二场的演出。她也是来自上海，是一名语文老师。她很惊诧于这里竟卧着一名男生。她以为屋内全是女生。——我倒是很奇怪了，因为在青年旅社里都是男女混住的。她对此反应怎么会那么大呢？不过聊得倒是还相得。她建议我明日先去东湖。我记下了她的推荐，留下了她的手机号码。或者有缘的话在上海还可以再见面。</p>
+<p>不久之后我便沉沉的睡去了，直到次日漱洗完毕，我整理好行囊，去前台退了房间。今天便是我在绍兴的最后一日，晚上无论如何要归上海了。</p>
+<p>穿过绍兴的一条街道，我用过早餐：不过一碗豆腐脑和一条油条。我辨不清方向只好掏出手机用GPS定位，在陌生的城市有GPS定位还真是方便很多。不需要地图，使用地图的话还要自己去定位。只是可惜GPS从来都只是为驾车服务的，上面没有步行信息（譬如小巷子的路线就不准了，而且不会给你指引步行路线）旅社的前台告诉我可以去城市广场坐车。我按照gps的指示走了出去，却始终没有找到公车站台所在。罢了，打车去好了，反正绍兴的出租车也不贵。在临上车之前，我测算了此地到东湖的距离，5公里。</p>
+<p>上了出租车，车子兀自向东行驶。到得东湖门口的时候，我看了看行程表，正是5公里的距离：看来并没有绕弯。下了车迳自走进了东湖。</p>
+<p>东湖是个人工湖。湖并不大，是当年凿石筑成而后引运河水所形成的。走进去过了桥见到了攀岩的两个人。我陡然想起在上海玩过的攀岩，由于体力不支，最后竟然没有登顶是我心底永远抹平不了的疙瘩。这里的山壁呈现小于90度角的斜度。不过这里是天然的。两位兄弟攀上一半，欲要再度攀升，却已经没有能力。从半山腰往下跳了下来。</p>
+<p>由于我是玩过攀岩的，所以攀岩并没有引起我太大的兴趣。旁边摆了几个箭靶，是射箭的。20元可以射八支箭。射箭这玩意儿我倒是没有体验过，这回体验一把好了。</p>
+<p>我实在不知道怎么瞄准。反正开头射的几支都偏离靶心老远。最后一支箭听从了指导人员的建议，我故意瞄准的时候偏向下方和右方。不想一箭射出竟然射出了几次当中最好的成绩。仅仅是次体验而言，我从中也没有体会到太多的乐趣。可能玩的不是太多所以射箭的乐趣还没有体验的充分。</p>
+<p>继续前行跳过池塘水面的几块石头来到了山脚下。这是座小山，我屋子爬了上去。爬到山顶只是见到一片的茶叶丛。继续前行见到了另一条下山的路。这里的山路最大的特色是大部分都是石头路。因为这座山本身就差不多是石头山。走到山下是一片的湖水。几名游客乘舟进去观赏溶洞。溶洞见得多了，我并无太大的兴趣。登舟便过了对岸。</p>
+<p>我正坐在水边的椅子上休息，电话突然响了。是王婷婷的。不知道怎么突然间给我来了一通电话。我想我可是漫游啊，而且手机上现在也没剩多少钱了。我又不好意思拒绝人家。反正听她絮叨了一番。我再给她说了一番。云云总总都是失恋的事情。一个国庆假期已经有两个女的打电话诉说她们失恋的事情了。真是个失恋的假期。王婷婷的例子很是极端。她谈的这名男友对她不管不顾。他们甚至没有一起出去吃过一次饭，王婷婷甚至没有进入过她男友的朋友圈，而她男友也不曾和王婷婷的朋友打成一片。这种恋爱过于古怪。王婷婷中间还说到她在她男友的房间里收拾垃圾的时候发现了避孕套，而她男友以“生理需求”为由做解释。我真不知这样的男友要来有何用了。从我男人的角度出发，无疑王婷婷是被玩弄了这段感情。不知道这名男友求的是什么，是性还是其他什么？我也没好意思细问。但是我很不客气的向她指出这样的男生是不值得去珍惜的。把过去忘掉，向前看！我利落的回答道。其实作为一个局外人，答案是很容易给出的。我也很清醒的明白对于当局者来说，知易行难。我对她的事情了解得不多，不能做出更为细致的回答。</p>
+<p>东湖其余也没有更多的景致。游罢东湖，我走到园外搭上免费巴士前往下一个景点：大禹陵。我本来还打算去秋瑾故居，兰亭等地方的。但这个时候仅仅是我的计划而已，后面还是发生了变化。</p>
+<p>大禹陵的面积并不小。我们进了园子以后搭乘了游览车往里面开去。下了车，步行进去。两边是各种远古时期的怪兽，什么应龙，野猪，大象，九尾狐之类的。大概都是些帮助大禹治水的神兽。</p>
+<p>走进去里面还有一个收门票的地方。这里是大禹陵的进口处。递过我的通票，我进了去。在路上我就已经看到了山顶的大禹像，远远看去好似稻草人一般。，此番前来大抵是要登顶的，因为这座山看上去并不算太高。</p>
+<p>爬到山顶，见到大禹像真是高。人站在下面仅仅不过脚掌的高度。山顶俯视大致可以看到绍兴的全貌。我小憩一会便返回山下了。中间参观过大禹陵，大禹祠，大禹庙。</p>
+<p>免费巴士的下一站是鲁迅故里。进了鲁迅的祖居，一路上都有导游在讲解。我不知道这些导游是哪里来的。反正听了也是白听。先跟了一位导游，听着说了一通。导游让大家参观房间。我看完房间出来以后嫌她太慢先行走开，这时听到了另外一个导游的讲解。</p>
+<p>我不知道是什么神经搭错了。这个导游我一直跟下去。她的声音很吸引我。不过我到底是个偷听者，尽管我一直很勇敢的跟随着这个导游参观鲁迅的祖居，三味书屋还有鲁迅的故居，但我始终没有勇气上前搭讪，尽管胸中有很多问题要问。总是觉得自己是一名旁听者，着实没有资格提问。临到结束，我也一直只是在细细的听着，并无发出一句的问话。临到终了，她走回去了。而我没有再多一言。</p>
+<p>最后买了一桶会稽山的十年绍兴老酒十斤，以及一些霉干菜，拖着疲惫的身躯赶回了上海。到家的时候已经是深夜11点多了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2016 Andy Tong
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/winnerweb/hexo-Yilia-Smackdown" target="_blank">Yilia(Smackdown)</a>
+        </div>
     </div>
   </div>
-</div>
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="http://img.hb.aicdn.com/eb11325b7d4a2cc41c30d96e10b27ccb7c88816b89a0-S1a2q6_fw658">
-    <p id="description"></p>
-    <ul class="social-icon">
-  
-  
-    <li>
-      <a href="https://twitter.com/sepwolves">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://weibo.com/adtpku">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/1353608/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-  </div>
-</div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/life/fancybox/jquery.fancybox.css">
 
-
-<div id="btn-view">Hide</div>
 
 <script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
-
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
-
-var isTriggerAnalytics = !( true && isIgnoreHost );
-
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
 </script>
+<script src="/life/js/main.js"></script>
 
 
 
-
-  
-  
-    <script src="/life/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/life/js/vegas.min.js"></script>
-  
-    <script src="/life/js/random.js"></script>
-  
-    <script src="/life/js/highlight.pack.js"></script>
-  
-    <script src="/life/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/life/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/life/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/life/js/plyr.js"></script>
-  
-
-<script>
-
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  }
 });
 
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
 });
-plyr.setup('.plyr', {iconUrl: '/life/css/sprite.svg'});
 </script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
 </body>
 </html>
-
