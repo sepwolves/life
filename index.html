@@ -4,10 +4,6 @@
   <meta charset="utf-8">
   
   <title>我的生活</title>
-
-  <!-- keywords -->
-  
-
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="各种生活">
 <meta property="og:type" content="website">
@@ -22,150 +18,182 @@
     <link rel="alternative" href="/atom.xml" title="我的生活" type="application/atom+xml">
   
   
-    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+    <link rel="icon" href="/life/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
   
   <link rel="stylesheet" href="/life/css/style.css">
+  <link rel="stylesheet" href="/life/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/life/apple-touch-icon.png">
+  
+    
+    
   
   
-
-  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
-  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-
+      <link rel="stylesheet" href="/life/fancybox/jquery.fancybox.css">
   
+  <!-- 加载特效 -->
+    <script src="/life/js/pace.js"></script>
+    <link href="/life/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/life/',
+          fancybox: true,
+          animate: true,
+          isHome: true,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
 </head>
 <body>
   <div id="container">
-    <div id="particles-js"></div>
     <div class="left-col">
     <div class="overlay"></div>
 <div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
-			
-		</a>
+    <header id="header" class="inner">
+        <a href="/life/" class="profilepic">
+            
+            <img lazy-src="/life/img/andy.jpg" class="js-avatar">
+            
+        </a>
 
-		<hgroup>
-		  <h1 class="header-author"><a href="/">Andy Tong</a></h1>
-		</hgroup>
+        <hgroup>
+          <h1 class="header-author"><a href="/life/" title="Hi Mate">Andy Tong</a></h1>
+        </hgroup>
 
-		
-		<p class="header-subtitle">这是我的生活</p>
-		
+        
+        <p class="header-subtitle">这是我的生活</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
 
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>菜单</li>
-						<li>标签</li>
-						
-						<li>友情链接</li>
-						
-						
-					</ul>
-				</div>
-			</div>
-		
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/life/Home">博客首页</a></li>
+                        
+                            <li><a href="/life/tags">静心阅读</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/sepwolves" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/fa-ge/" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/adtpku" title="weibo">weibo</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/life/tags/回忆录/" style="font-size: 13.33px;">回忆录</a> <a href="/life/tags/影评/" style="font-size: 20px;">影评</a> <a href="/life/tags/时事/" style="font-size: 10px;">时事</a> <a href="/life/tags/游记/" style="font-size: 16.67px;">游记</a> <a href="/life/tags/电脑/" style="font-size: 10px;">电脑</a> <a href="/life/tags/知乎/" style="font-size: 10px;">知乎</a>
+                    </div>
+                </section>
+                
+                
+                
 
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/life/">主页</a></li>
-				        
-							<li><a href="/life/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/life/tags/回忆录/" style="font-size: 13.33px;">回忆录</a> <a href="/life/tags/影评/" style="font-size: 20px;">影评</a> <a href="/life/tags/时事/" style="font-size: 10px;">时事</a> <a href="/life/tags/游记/" style="font-size: 16.67px;">游记</a> <a href="/life/tags/电脑/" style="font-size: 10px;">电脑</a> <a href="/life/tags/知乎/" style="font-size: 10px;">知乎</a>
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/winnerweb/hexo-theme-smackdown">smackdown</a>
-			        
-			        </div>
-				</section>
-				
-
-				
-			</div>
-		</div>
-	</header>				
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">爱游泳、爱交友、爱看书、喜欢接触新鲜事物、迎接新的挑战。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
 </div>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">Andy Tong</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
-			</div>
-			<hgroup>
-			  <h1 class="header-author">Andy Tong</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">这是我的生活</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/life/">主页</a></li>
-		        
-					<li><a href="/life/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-				</div>
-			</nav>
-		</header>				
-	</div>
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/life/" title="Me">Andy Tong</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/life/" class="profilepic">
+                
+                    <img lazy-src="/life/img/andy.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/life/" title="Me">Andy Tong</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">这是我的生活</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/life/Home">博客首页</a></li>
+                
+                    <li><a href="/life/tags">静心阅读</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/sepwolves" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/fa-ge/" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/adtpku" title="weibo">weibo</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
 </nav>
       <div class="body-wrap">
   
@@ -173,7 +201,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/22/第三十六个故事/" class="article-date">
-  	<time datetime="2016-11-22T08:43:35.000Z" itemprop="datePublished">2016-11-22</time>
+      <time datetime="2016-11-22T08:43:35.000Z" itemprop="datePublished">2016-11-22</time>
 </a>
     </div>
   
@@ -186,10 +214,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/22/第三十六个故事/">
-        第三十六个故事
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/22/第三十六个故事/">第三十六个故事</a>
     </h1>
   
 
@@ -198,6 +223,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>其实我几年前曾经看过这部电影的，但是还是有很多情节都忘记了。直到看到撞车，看到海芋，我才确定，嗯，这不是我第一次看这电影。</p>
 <p>但是我还是很喜欢这部电影。很小清新。有意思的是：我只记得监制是侯孝贤，却不记得谁是导演。</p>
 <p>它真的蛮小清新的。我们可以感觉到每个演员的台词都是如此的自然，就好像不是在拍电影，就是在现实当中说话一样。同样会出现这样那样的口误，停顿，等。这种感觉会让人觉得很亲切。</p>
@@ -214,24 +240,25 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
-
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -244,7 +271,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/21/庆安枪击事件/" class="article-date">
-  	<time datetime="2016-11-21T09:06:19.000Z" itemprop="datePublished">2016-11-21</time>
+      <time datetime="2016-11-21T09:06:19.000Z" itemprop="datePublished">2016-11-21</time>
 </a>
     </div>
   
@@ -257,10 +284,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/21/庆安枪击事件/">
-        庆安枪击事件
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/21/庆安枪击事件/">庆安枪击事件</a>
     </h1>
   
 
@@ -269,6 +293,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>对庆安枪击事件大概进行了两方面的了解。一个是优酷上公布的视频，另一个是youtube上屠夫对当事人的采访。两者的出入并不大。作为对此事件进行分析的主要依据我认为是可靠的。<br>对这件事的结论我的判断是：枪击是合理的，也是必要的。当事人分明受到了警告的前提下，仍然没有降服，那么接下来的命运就只能自己承担。<br>对很多事情我们并不了解。我们不知道为什么徐纯合为什么要去堵住大门，不让旅客进入。也许媒体对此进行了蓄意隐瞒。但无论作为当事人的你受到怎样的不公伤害，你都没有理由去侵害第三者的利益，永远都没有。你阻止其他旅客进站一定是不对的，警察对此进行干预也定然是合理的。<br>由于公开的视频是剪辑，我们的确不知道为什么徐纯合后来火气那么大，冲向警务室拼命的踹门。警察试图用防暴棍对他进行制服的时候，都未能成功。甚至被夺去防暴棍。可以很明确的是，警察受到了防暴棍的攻击。警察是一个很特殊的身份，作为执法者的警察我认为是有权利维护自身的合理利益的，因为警察本身是时刻处于危险当中，再加上警察手中有枪。如果这个时候徐纯合击倒了警察，并夺取了枪支。（当然我们可以说当时徐纯合毫无夺枪意图，可是你在袭警啊，你在用棍子殴打警察啊，谁能保证你把警察击倒之后不会夺枪呢？既然棍子可以夺，枪自然也能夺了。）那么后果很难想象。<br>徐纯合背后是怎么样一个人，这一点都不重要。重要的是在整个事件中他的表现。我们的确看到了他的怨气。但是同时我们也看到了他罔顾亲人，甚至拿亲人当挡箭牌的事实。从这点上来说他的人品是有严重问题的。他第一度拿他母亲当挡箭牌，第二度更是抓住女儿掼到了地上。我不知道他是出于什么样的理由，会对亲人采用如此恶劣的手段</p>
 
       
@@ -277,20 +302,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/时事/">时事</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/时事/">时事</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -303,7 +329,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/21/共产主义的伸缩/" class="article-date">
-  	<time datetime="2016-11-21T09:05:50.000Z" itemprop="datePublished">2016-11-21</time>
+      <time datetime="2016-11-21T09:05:50.000Z" itemprop="datePublished">2016-11-21</time>
 </a>
     </div>
   
@@ -316,10 +342,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/21/共产主义的伸缩/">
-        共产主义的伸缩
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/21/共产主义的伸缩/">共产主义的伸缩</a>
     </h1>
   
 
@@ -328,6 +351,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>最近正好看到一个评论，事实对近期社会现象的总结，有点意思。</p>
 <p>该评论认为，共产主义的政策有一个不变的特征，就是它总是处于一个伸缩的状态。在伸的状态下，它派余粮收集队，直接消灭一切似有财产。然后它发现这样不行了，又开始执行新经济政策，财富又开始增长。财富足够多了，不需要你了。再来就是集体农庄。然后再在二战当中 搞统一战线，一轮一轮的折腾。</p>
 <p>目前我们的社会体制，在当下来说是在缩的一个阶段。很多人认为在经历改革开放30年之后，政策似乎变得只能伸，不能缩了。我想这是犯了政治幼稚病，是一种严重的错觉。最近的政策特征是非常典型的缩。我们必须要坚定的以国家利益为第一位，消灭一切个人私欲。</p>
@@ -339,16 +363,17 @@
     <div class="article-info article-info-index">
       
       
-      
 
+      
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -361,7 +386,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/21/Win7的神模式/" class="article-date">
-  	<time datetime="2016-11-21T09:05:37.000Z" itemprop="datePublished">2016-11-21</time>
+      <time datetime="2016-11-21T09:05:37.000Z" itemprop="datePublished">2016-11-21</time>
 </a>
     </div>
   
@@ -374,10 +399,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/21/Win7的神模式/">
-        Win7的神模式
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/21/Win7的神模式/">Win7的神模式</a>
     </h1>
   
 
@@ -386,6 +408,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>偶然间在Quora上看到的，方法如下：</p>
 <pre><code>新建文件夹（任意处）；
 改名为『GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}』
@@ -398,20 +421,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/电脑/">电脑</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/电脑/">电脑</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -424,7 +448,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/21/有话好好说/" class="article-date">
-  	<time datetime="2016-11-21T09:05:17.000Z" itemprop="datePublished">2016-11-21</time>
+      <time datetime="2016-11-21T09:05:17.000Z" itemprop="datePublished">2016-11-21</time>
 </a>
     </div>
   
@@ -437,10 +461,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/21/有话好好说/">
-        有话好好说
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/21/有话好好说/">有话好好说</a>
     </h1>
   
 
@@ -449,6 +470,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>戾气，几乎是人类的本能。网上很多的争吵，本质上，都是网民戾气太重所致。</p>
 <p>所以，知乎推出了友善度这一工具。对此我表示了强烈的赞成态度。</p>
 <p>你的观点正确与否不是最重要的，你在知乎这块土地上，你对于其他用户的尊重与否才是最重要的。如果你不尊重他人，那么不管你的观点有多么正确，你被官方处理都是再合情合理不过。</p>
@@ -465,20 +487,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/知乎/">知乎</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/知乎/">知乎</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -491,7 +514,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/21/守规则，知敬畏/" class="article-date">
-  	<time datetime="2016-11-21T09:04:57.000Z" itemprop="datePublished">2016-11-21</time>
+      <time datetime="2016-11-21T09:04:57.000Z" itemprop="datePublished">2016-11-21</time>
 </a>
     </div>
   
@@ -504,10 +527,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/21/守规则，知敬畏/">
-        守规则，知敬畏
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/21/守规则，知敬畏/">守规则，知敬畏</a>
     </h1>
   
 
@@ -516,6 +536,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>东莞押钞人击毙砸车人的新闻，在网上谈了非常多了。我想说说我的看法。一孔之见，不一定正确。</p>
 <p>我想说，每个人在社会上，都应该有正确的处理问题的方式，要遵守规则，要敬畏规则，否则遭遇悲剧是不可避免的事情。</p>
 <p>押钞车是一种非常敏感的车辆。这和其他车辆是很不一样的。上面是坐了好几名持枪的人。我每次在路上经过银行的时候，看到那些持枪者，我都会有所忐忑。我不知道这个黄先生为什么把在愤怒的刺激下，把恐惧丢在了一边呢？他为什么就那么坚定的能够相信那些枪支就是用来吓唬人的呢？是的，你可以相信他们只是吓唬人的，可是你要为自己的行为负责。</p>
@@ -529,16 +550,17 @@
     <div class="article-info article-info-index">
       
       
-      
 
+      
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -551,7 +573,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/15/好笑，引人入胜/" class="article-date">
-  	<time datetime="2016-11-15T08:13:32.000Z" itemprop="datePublished">2016-11-15</time>
+      <time datetime="2016-11-15T08:13:32.000Z" itemprop="datePublished">2016-11-15</time>
 </a>
     </div>
   
@@ -564,10 +586,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/15/好笑，引人入胜/">
-        好笑，引人入胜《忽然遇见你》观后
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/15/好笑，引人入胜/">好笑，引人入胜《忽然遇见你》观后</a>
     </h1>
   
 
@@ -576,6 +595,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>我完全是因为卡琳娜·卡普才找到的这部电影。卡琳娜·卡普是《3 idiots》的女主角。（女主角？只是唯一一个女性角色吧？貌似戏份也不算太多？）然后就喜欢上了这个女星。<br>但是我真的没想到，一开始她的这个角色其实挺招我烦的。艾迪特跟她萍水相逢，她口若悬河的不断在他面前神神叨叨的说，最后艾迪特因为受不了她，径自下了火车。她却自己赶下来要催他上车，结果却把自己给耽误了。艾迪特好不容易开快车把她送到了下一站，她却因为喝水又一次耽误了行程。诚如艾迪特所说，她就是在不断的制造问题制造麻烦。她从来不会把时间的先后逻辑顺序联想清楚：我为什么要那样做，我那样做的后果是什么？总是想到哪里就去做哪里，不管后果是不是自己所预期的。在小旅店那一个片段，她就做了如此危险的事情。虽然她说她会空手道，可是如果艾迪特就是用心不良呢，她能怎么办？（话说小旅店的那个前台的表情非常有意思，演的活灵活现）<br>我非常不喜欢这样的脾气和性格，因为这种习惯无疑要给自己和身边的人带来这样那样的伤害。反过来，艾迪特就理性得多——虽然他是一个不折不扣的音乐家，（他同时还是一个大公司的掌舵人）似乎应该感性多一些才对。至少在吉特要逃离家门的时候，艾迪特告诉她要往回跑，而不是往外跑。吉特就缺乏这样的智慧。<br>其实吉特的家庭条件也很好：从他们家的环境布置就可以看出来：这是一个大户啊。应该也是蛮有钱的吧。<br>吉特的确是给了艾迪特第二次生命：当艾迪特在火车上就要轻生的时候，是吉特及时阻止了他。所以艾迪特说她给了他第二次生命一点都不为过。<br>印度果然也有白人。比如像艾迪特，仔细看会发现他其实很白。印度的不同人种色差还是比较大的。<br>吉特的妹妹还是没有她好看，颜值至少要下跌一个数量级。<br>我一直没想明白一件事：为什么印度人的电影里总是要放无数的歌舞呢。这样做到底可以起到什么样的效果呢？<br>安淑曼这个角色的疑点非常多：首先片中一直没有交代安淑曼和吉特是怎么认识的，我们根本不知道两个人的关系到底怎么样，为什么吉特会完全没有在和安淑曼商量的情况下就敢离家出走，甚至敢号称说要私奔，结果临了却把安淑曼吓到；其次两个人的距离非常远，为什么会发展出一段这么深厚的感情，以致于吉特在最开始还信誓旦旦的说：我一辈子就只有一个男人，那就是安淑曼。（话说艾迪特和他前女友的故事，片中也没有交代清楚。艾迪特那么有钱，为什么前女友要舍他而去？艾迪特身上到底有什么她难以忍受的毛病或者缺点呢？至少在片中看来，他有很多优点啊，很温柔，善解人意。而且，关键是很聪明，有很多点子）。安淑曼嫌弃吉特幼稚，为什么最后还要跑回来追赶吉特呢？<br>艾迪特也是，明明自己非常喜欢吉特，也向吉特承认过自己的感情，可是当机会出现在眼前的时候，他还是要把吉特让给安淑曼。安淑曼的确是个人渣啊，把吉特一个人赶走，孤零零的，也不怕发生什么意外。（实际上，在吉特第二次被火车落下的时候，就已经显现出在印度一个单身女人的危险了。有那么多男人垂涎欲滴）<br>吉特前后的变化非常大。至少在被安淑曼拒绝之后，她整个人就不再是那么叽叽喳喳，幼稚得不行了。整个人阴郁了很多。</p>
 
       
@@ -584,20 +604,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -610,7 +631,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/15/三角之恋/" class="article-date">
-  	<time datetime="2016-11-15T08:13:16.000Z" itemprop="datePublished">2016-11-15</time>
+      <time datetime="2016-11-15T08:13:16.000Z" itemprop="datePublished">2016-11-15</time>
 </a>
     </div>
   
@@ -623,10 +644,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/15/三角之恋/">
-        三角之恋-《蓝色大门》观后
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/15/三角之恋/">三角之恋-《蓝色大门》观后</a>
     </h1>
   
 
@@ -635,6 +653,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>直到剧情发展到很后面，我才幡然醒悟这部电影要表达的是什么。<br>爱情。<br>青春期的爱情。<br>青春期的同性之爱。<br>还有异性之爱。<br>这真的是一个完美的三角之恋。<br>孟克柔爱着林月珍，甚至愿意为她做任何事情，包括帮她去追她所喜欢的男生。虽然林月珍真的很普通，有一点点羞涩，智商很平庸。<br>林月珍爱着张士豪，帅气的小男生，又会游泳又会吉他。收藏一切张士豪的东西，包括篮球、球鞋、还有用废的原子笔，等等。青春期的孩子用这种方式来表达爱情是再典型不过了。<br>可是张士豪却爱着孟克柔。甚至跑到孟克柔妈妈的摊子上去吃饭，希望孟克柔能够来看他的比赛。他希望孟克柔如果开始喜欢男人的那一刻，一定要先告诉他啊。<br>多么完美的三角恋爱，多么完美的一个闭环，你爱着我，我爱着他，他却爱着你。<br>这部电影，会让人勾起许多青春的回忆，虽然这里面的爱情其实并非典型。（至少在公开场合，同性恋都非常少吧） </p>
 
       
@@ -643,24 +662,25 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
-
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -673,7 +693,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/15/人性在这里得到了深刻的体现/" class="article-date">
-  	<time datetime="2016-11-15T08:13:07.000Z" itemprop="datePublished">2016-11-15</time>
+      <time datetime="2016-11-15T08:13:07.000Z" itemprop="datePublished">2016-11-15</time>
 </a>
     </div>
   
@@ -686,10 +706,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/15/人性在这里得到了深刻的体现/">
-        人性在这里得到了深刻的体现（人在旅途观后）
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/15/人性在这里得到了深刻的体现/">人性在这里得到了深刻的体现（人在旅途观后）</a>
     </h1>
   
 
@@ -698,6 +715,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>这部电视剧大概是我在小学三四年级的时候看的。当时刚刚开始要晚修，我们傍晚回家正好赶上6点-7点的电视剧。留下来的印象最深的莫过于那首主题曲，甚至在晚修的课上也会轻轻哼起这首歌。<br>如果没有重新再看，那么我记忆最深的就是办理满汉全席这件事。虽然最后这件事失败了，当时是觉得很重要的样子。<br>我觉得剧中最为正面的人物是黄自勤。他忠于职守，哪怕在整个酒店上下都污浊不堪的背景下，他仍然保持清白。<br>苔梨园的老板朱承简直是活该。没有识人之明，是非不分，一味的试图和员工讲感情。其实当你和邪恶势力讲感情的时候，你不可避免的就站在了正直势力的对立面。最后的下场也很悲惨，直接死在了大街上，甚至死无葬身之地。<br>倩云是一个非常要强的女性角色，从底层一直往上做。最后好像是做到了酒店高层。可惜很遗憾的是，她太看重事业，甚至忽视了自己男朋友杜嘉南的感受。<br>杜嘉南的性格有点阴柔。这也许是他和倩云不搭调的地方。倩云太强势。两个人即便最后在一起了，也可能不会太幸福。<br>康俐就是太蠢了，何苦要对一个男人这么好。你应该早就知道江天文不是自己的菜，趁早把他给蹬掉。没想到却让他吃软饭一直吃到底。<br>江天文人面兽心，最后杀了陈业，自己被警察抓住也是活该。<br>Steven梁花花公子一个，但毕竟也没有坏到底，最后还是有一个比较完美的结局。</p>
 
       
@@ -706,24 +724,25 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
-
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -736,7 +755,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/15/非主旋律的主旋律/" class="article-date">
-  	<time datetime="2016-11-15T08:12:57.000Z" itemprop="datePublished">2016-11-15</time>
+      <time datetime="2016-11-15T08:12:57.000Z" itemprop="datePublished">2016-11-15</time>
 </a>
     </div>
   
@@ -749,10 +768,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/15/非主旋律的主旋律/">
-        非主旋律的主旋律
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/15/非主旋律的主旋律/">非主旋律的主旋律</a>
     </h1>
   
 
@@ -761,6 +777,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>很早就听说这部片子拍得很好，很真实。真正打动我的，是知乎上一些缉毒警对这部片子的评价：真实！对张涵予和彭于晏的评价也很高，于是选择了这部电影观看。<br>可能我对血腥的场面很不敏感。别人看了会恶心的场面，我毫无动容。在那十三具尸体被打捞上来的时候，我的身体并没有感觉有什么不适。我也没有觉得这些场面有怎么冲击我的大脑或者我的心胸。但是这并不能排除这部片子的某些地方让我动容，甚至让我湿润，我甚至在有些地方必须要用很大的努力来抑制自己。<br>当郭帆被一个娃娃兵用机枪扫射的时候，在那个刹那，我真是恨不能一枪就杀了那个小孩。虽然高刚当时向他射了一枪，可是当后来听说这个小孩居然没有死还活着的时候，我还是微微有点失望。我不管那么多政治正确。就算他是儿童，他也是恶魔的儿童。他只能死，只有他死了才能保证我们的队员不死。<br>当郭冰在啜泣，强忍着悲痛，泪水却止不住的淌到地上的时候，我动容了。我可以明显感觉到自己的眼角开始湿润。然后我开始努力的抑制自己。很快，画面转到了湄公河上，这种刺激终于过去。<br>这部片子就是一部动作片。其实情节是比较简单的。我们的人员跨境追捕毒贩，走了几条路。一条路不通，走下一条路。场面极尽所能事。我在整个影片当中都保持着高度紧张的心理状态，即便知道最后的结果也是如此。<br>相比毒贩的强大，我会感觉他们的人手是不是太少了？比如说高刚，最后竟然是单枪匹马来对付一群毒贩。<br>赌场那一段我是没太看明白。为什么监管会这么薄弱？几乎是在光天化日之下对岩多帕进行严刑拷打？然后狼狗竟然可以径自而入，这个我真心没想明白为什么可以做到？高刚在追击糯康那段，当高刚爬到顶楼，可是糯康却按下了爆炸的按钮。高刚在最高楼跌落下来，居然后面还能没事，还能作战。我没想明白是怎么做到的。<br>那段童兵玩俄罗斯转盘的片段实在是非常火爆。我最早知道俄罗斯转盘是从《猎鹿人》当中知道的。同样是在东南亚的热带丛林，没想到现在的主角却变成了两个童兵。那个情节真是非常紧张。扣一下扳机，自己没死，终于舒了一口气；然后对方扣了扳机也没事的时候，自己拿过来再扣，就直接打死了。没想到这些小孩子都能如此嗜血。你就很容易理解为什么那个商场的童兵可以如此轻松的拿出机枪冲郭帆扫射。<br>还有一个是炸指挥部的情节。两个孩子使用计谋，混过了门口保安的检查。然后那个小孩拿着炸药居然就快要走进指挥部了。丢下炸药，掏出手枪就要击杀那一刻，我恨不能有人能够一枪将这个小孩毙命啊。你是小孩，可你也同样是魔鬼的化身。<br>这部片子说是『主旋律』，但是也有数个不符合『主旋律』或者说不是『政治正确』的地方。比如奇夫对瓦拉的行刑。一语不合，老子就给你放血，就要让你死。我看了以后觉得很痛快啊！让你不说让你不说，你既然不说，那就去死吧。还有一段用直升飞机吊着皮尔的镜头，来进行威逼，也是看了让人非常痛快。非常时刻当然采用非常的办法来解决问题。击杀童兵也无所顾忌。对这一点，导演林超贤甚至自豪的说，我的片子就不是主旋律。 </p>
 
       
@@ -769,20 +786,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -795,7 +813,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/11/15/喜欢的和讨厌的/" class="article-date">
-  	<time datetime="2016-11-15T08:12:45.000Z" itemprop="datePublished">2016-11-15</time>
+      <time datetime="2016-11-15T08:12:45.000Z" itemprop="datePublished">2016-11-15</time>
 </a>
     </div>
   
@@ -808,10 +826,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/11/15/喜欢的和讨厌的/">
-        喜欢的和讨厌的——《驴得水》观后
-        
-      </a>
+      <a class="article-title" href="/life/2016/11/15/喜欢的和讨厌的/">喜欢的和讨厌的——《驴得水》观后</a>
     </h1>
   
 
@@ -820,6 +835,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>片中最夸张的是裴魁山和周铁男两个人的前后反差实在太大。裴魁山一开始来做这个事情能是为了钱？能够来到这个地方做教育的应该都是怀揣理想的人吧。但是片中又把他写得非常的市侩，非常的现实。从他劝说张一曼要去西南联大当助教的这件事上基本上可以看出他其实是没有多少理想主义的。但是有一点，他在一开始的时候其实还是非常讲原则的。比如说他拒绝用奖学金来吸引学生。他的同事对他的评价倒是挺到位的：抠抠搜搜的。<br>我最喜欢的角色是张一曼。她最无辜，对人最没有伤害。但是最后偏偏是她受到了最大的伤害。<br>其次是孙佳。从头到尾，她都一直说要做正确的事情。她是一个很单纯的人。其实看到她的故事，就会想起年轻时的自己。比如说自己年轻的时候也会觉得贪污腐败不行啊，如果大家都去举报的话，不就没有这些贪污腐败了吗？实际上还是太幼稚。太幼稚的话，就会太执着于一个目标。比如说在救驴棚的问题上。水明明是不够的，可是她出于对驴的爱，她还是明知其不可为而为之。这种精神和情感殊为可贵，可是在现实中却毫无用处。<br>戏中最讨厌的人<br>第一是裴魁山。他的道貌岸然：一下子在张一曼面前低眉顺眼，一下子又恼羞成怒。他的显摆，也很让人鄙视。<br>周铁男的色厉内荏，让人看穿了他的虚弱。其实没有人不怕死。但主要是周铁男从一开始的飞扬跋扈到后面的摇尾乞怜，反差太大，这一点就让人特别受不了。你能！在现实中也是非常反感这种人。气焰嚣张得不行，真的大难临头的时候又尿裤子了。<br>铜匠的老婆，其实是一个非常常见的角色，真的非常讨厌。一副很屌的样子，蛮横无理。但是这个演员刻画得非常细致入微，是泼妇的典型代表，以致我看了以后就恨得咬牙切齿，恨不能一枪就毙了这个泼妇。<br>孙校长一心想办成农村教育，一心想让更多的孩子接受教育。为了达到这个目的，他可以不惜牺牲一些原则。理想主义者往往办不成事。孙校长其实算是一个现实的理想主义者，可是在理想主义里面掺杂了太多的现实层面，结果其实也导致了他的理想，其实已经不是那么理想了。当他对铜价说出『有教无类』的话的时候，我就觉得这是多么大的讽刺啊。你还想教别人，你们坐端正了吗？<br>当然，他的女儿孙佳是很正直的，而且是从头到尾都是正直的，初心未改。可是偏偏这种正直在现实社会中根本无法行得通。当周铁男冲着她高喊『幼稚』的时候，我感同身受。孙佳你以为你举报了就能解决问题了？不能啊。当然周铁男也是眼高于顶的家伙，以为自己只要上位了，掌握权力了，就能够对这些丑恶的人，丑恶的事，进行报复，进行扭转。这其实也是另一种幼稚。当你真的上位了，你有很大的可能已经成为『恶龙』了。你根本无法做什么，也无法改变什么。到最后，只能为自己谋利益。</p>
 
       
@@ -828,20 +844,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -854,7 +871,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/06/24/西藏之旅——亚东之旅流水账/" class="article-date">
-  	<time datetime="2016-06-24T02:13:51.000Z" itemprop="datePublished">2016-06-24</time>
+      <time datetime="2016-06-24T02:13:51.000Z" itemprop="datePublished">2016-06-24</time>
 </a>
     </div>
   
@@ -867,10 +884,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/06/24/西藏之旅——亚东之旅流水账/">
-        西藏之旅——亚东之旅流水账
-        
-      </a>
+      <a class="article-title" href="/life/2016/06/24/西藏之旅——亚东之旅流水账/">西藏之旅——亚东之旅流水账</a>
     </h1>
   
 
@@ -879,6 +893,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>照例很早，不到七点我们便起床。洗漱完毕，我们把行李寄存。我的拉杆箱留在了这里，因为背着它既有点多余又挺麻烦。结完帐寄存毕，而门口，是候着我们的大巴。</p>
 <p>这趟行程算是聚齐了人。除了夔去了青海西宁，来拉萨的同学都在这一刻齐活了。车上有几个本身就在拉萨的师弟师妹。曾德杰、刘晨昕，还有钱进、卢小萍。还有后来在江孜上车的梁岩和刘薇。家靖，毕业后第一次见到。（入学十周年聚会的时候他没有去昌平，那时便没有见到他）还有张蓉蓉、肖琦，还有一些不相识的朋友。</p>
 <p>车很大，我和巧分别找了座坐了下来。车后是一堆的饮料和食物。我们早晨甚至都没来得及吃早餐，所以其时我饿得发紧。</p>
@@ -926,20 +941,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -952,7 +968,7 @@
   
     <div class="article-meta">
       <a href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/" class="article-date">
-  	<time datetime="2016-01-19T01:25:32.000Z" itemprop="datePublished">2016-01-19</time>
+      <time datetime="2016-01-19T01:25:32.000Z" itemprop="datePublished">2016-01-19</time>
 </a>
     </div>
   
@@ -965,10 +981,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/">
-        纯粹的动作片，画面感很强，情节不足——《绣春刀》观后
-        
-      </a>
+      <a class="article-title" href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/">纯粹的动作片，画面感很强，情节不足——《绣春刀》观后</a>
     </h1>
   
 
@@ -977,35 +990,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这显然是一部动作片。片中打斗的镜头很多，而且我承认拍的也不错。我甚至觉得导演为了表现打斗场面的
+          
+              <p>这显然是一部动作片。片中打斗的镜头很多，而且我承认拍的也不错。我甚至觉得导演为了表现打斗场面的
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
-
+      
+        <p class="article-more-link">
+          <a  href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/#more">大航海 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
-      
-        <p class="article-more-link">
-          <a  href="/life/2016/01/19/纯粹的动作片，画面感很强，情节不足——《绣春刀》观后/#more">more >></a>
-        </p>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1018,7 +1034,7 @@
   
     <div class="article-meta">
       <a href="/life/2015/11/24/缺乏深入挖掘——《少年犯》观后/" class="article-date">
-  	<time datetime="2015-11-24T13:11:56.000Z" itemprop="datePublished">2015-11-24</time>
+      <time datetime="2015-11-24T13:11:56.000Z" itemprop="datePublished">2015-11-24</time>
 </a>
     </div>
   
@@ -1031,10 +1047,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2015/11/24/缺乏深入挖掘——《少年犯》观后/">
-        缺乏深入挖掘——《少年犯》观后
-        
-      </a>
+      <a class="article-title" href="/life/2015/11/24/缺乏深入挖掘——《少年犯》观后/">缺乏深入挖掘——《少年犯》观后</a>
     </h1>
   
 
@@ -1043,6 +1056,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>在很多年以前，那时还在我读幼儿园的时候，我曾经看过这部片子。给我留下印象最深的是里面的一首插曲：“妈妈呀，妈妈呀……”<br>为什么会有这么多少年犯？他们为什么会走上犯罪的道路？影片给的理由很简单：多数是因为父母遗弃了他们，他们不懂法，有些人甚至都不把杀人当回事儿。可是真的是这样吗？我只觉得影片在很多地方的处理过于简单武断，它没有把内容进行深入表现，而仅止于非常表层的讨论。我觉得完全可以再进一步深入挖掘。比如那个狱霸行为：它是怎么形成的？它都造成了那些危害？方刚和另一个家伙的冲突，有没有造成后面的报复性行为。他用一只手就能制服他，靠的是什么？他父母都做了些什么，为什么对他如此冷淡？他这么倔强的脾气是怎么产生的？这么多内容，片子都一笔带过，根本没有深入挖掘。<br>对谢洁心的处理过于简单。可能这个演员的表现能力也非常有限。她在片中的作用就是一个老好人。看到犯人已经严重斗殴了，犯人们说那是开玩笑，居然也能相信。缺乏自己的独立思考能力，空有一副所谓的善良热心心肠。对于丑恶事情缺乏处理能力。包括中队长也缺乏这个能力，所长掌握的情况似乎略多一点。至少他知道方刚在打架事件当中不是承担主要责任。（但是也奇怪，不管怎么说，在少管所打架一定是错的，即便是因为对方的狱霸行为，他似乎也应该承担一定的责任。但是没有，居然放过它了，这是很奇怪的一种设定）<br>为什么少管所里还能组织起一支乐队啊。你说个别人擅长乐器，我相信。可是有那么g好多人都能够乐器，这真的就有点让人匪夷所思了。难道真是的少管所里真的能凑得出一支乐队？这说明什么？犯罪团伙的素质都很高？<br>情节的设置真的很奇怪。为什么在少管所里居然有剪刀，而且有两把。而且，吞剪刀事件已经闹过一次，虽然是假的，可是毕竟要引起狱方警惕，可是狱方居然没把这个当回事，又让犯人吞了一次剪刀（虽然这次是来真格的了）狱方在这件事上应该承担非常严重的责任。可是影片也没有涉及到这个情节。这个也是不可思议的。<f6><br>我觉得演得最好的是萧佛，虽然他也不是专业演员（这部片子最大的特色是演员基本上都是少管所的孩子们），但是把人物性格表现得活灵活现，他的机智，狡黠，甚至也有点可怜……在所有的演员当中他是最有表现力的。 </f6></p>
 
       
@@ -1051,24 +1065,25 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
-
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1081,7 +1096,7 @@
   
     <div class="article-meta">
       <a href="/life/2015/11/22/幼儿园回忆录/" class="article-date">
-  	<time datetime="2015-11-22T08:43:09.000Z" itemprop="datePublished">2015-11-22</time>
+      <time datetime="2015-11-22T08:43:09.000Z" itemprop="datePublished">2015-11-22</time>
 </a>
     </div>
   
@@ -1094,10 +1109,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2015/11/22/幼儿园回忆录/">
-        幼儿园回忆录
-        
-      </a>
+      <a class="article-title" href="/life/2015/11/22/幼儿园回忆录/">幼儿园回忆录</a>
     </h1>
   
 
@@ -1106,6 +1118,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>我几乎从来没有回忆过幼儿园的生活。实际上我是有记忆的，尽管年代久远，记忆可能残缺不全，甚至也许已经发生了错乱。但是它们就是在我的脑海里存在着。</p>
 <p>我已经有孩子了。我现在还能教孩子很多我幼儿园时候念过的儿歌。『你拍一，我拍一，一个孩子抱公鸡；你拍二，我拍二，二个孩子肚子饿；你拍三，我拍三，三个孩子爬高山；你拍四，我拍四，四个孩子写大字；你拍五，我拍五，五个孩子学跳舞；你拍六，我拍六，六个孩子切猪肉；你拍七，我拍七，七个孩子坐飞机；你拍八，我拍八，八个孩子吹喇叭；你拍九，我拍九，九个孩子喝老酒；你拍十，我拍十，看看谁是蒋介石。』这属于比较普通的儿歌。还有一些，其实是很不适宜的。『冬瓜西瓜你傻瓜，傻来傻去就是他，他的屁股会开花。』『东南西北，你家有鬼。』『红旗飘飘，肚子幺幺，你妈生个孩子喜夭夭。』这几个我是不会再教给我的孩子了，尽管它们是我的童年记忆。</p>
 <p>我上幼儿园的时候大约是在84年，虚岁5岁。对第一天去幼儿园的场景，仅有一个非常非常模糊的印象了。我留下的印象大概是：对陌生环境的恐慌，害怕，强烈的不适应感。</p>
@@ -1131,20 +1144,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1157,7 +1171,7 @@
   
     <div class="article-meta">
       <a href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/" class="article-date">
-  	<time datetime="2014-03-19T05:37:44.000Z" itemprop="datePublished">2014-03-19</time>
+      <time datetime="2014-03-19T05:37:44.000Z" itemprop="datePublished">2014-03-19</time>
 </a>
     </div>
   
@@ -1170,10 +1184,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/">
-        不可多得的佳作——《鬼子来了》观后
-        
-      </a>
+      <a class="article-title" href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/">不可多得的佳作——《鬼子来了》观后</a>
     </h1>
   
 
@@ -1182,35 +1193,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这部电影在3,4年前曾经看过一遍，而今再看一遍，觉得还是有很多感触。11<br>不知道为什么这部电影会成为禁片。它并非歌颂日军，相反，在影片的最后，它极大程度的表达了日军的凶残
+          
+              <p>这部电影在3,4年前曾经看过一遍，而今再看一遍，觉得还是有很多感触。11<br>不知道为什么这部电影会成为禁片。它并非歌颂日军，相反，在影片的最后，它极大程度的表达了日军的凶残
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
-
+      
+        <p class="article-more-link">
+          <a  href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/#more">大航海 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
-      
-        <p class="article-more-link">
-          <a  href="/life/2014/03/19/不可多得的佳作——《鬼子来了》观后/#more">more >></a>
-        </p>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1223,7 +1237,7 @@
   
     <div class="article-meta">
       <a href="/life/2013/06/30/这真的不是我们的青春——《致我们终将失去的青春》观后/" class="article-date">
-  	<time datetime="2013-06-30T04:12:22.000Z" itemprop="datePublished">2013-06-30</time>
+      <time datetime="2013-06-30T04:12:22.000Z" itemprop="datePublished">2013-06-30</time>
 </a>
     </div>
   
@@ -1236,10 +1250,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2013/06/30/这真的不是我们的青春——《致我们终将失去的青春》观后/">
-        这真的不是我们的青春——《致我们终将失去的青春》观后
-        
-      </a>
+      <a class="article-title" href="/life/2013/06/30/这真的不是我们的青春——《致我们终将失去的青春》观后/">这真的不是我们的青春——《致我们终将失去的青春》观后</a>
     </h1>
   
 
@@ -1248,6 +1259,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>我觉得这部片子还可以，可以让人吐槽的地方不是太多。但是，它真的不是我们的青春，即便里面添加了不少我们青春时的元素。</p>
 <p>柯景腾拍的《那些年，我们一起追的女孩》，在我看来能够引起共鸣的东西反而更多，即便它的背景是在台湾。可是这一部《致青春》，却真的没有太多我们的影子。</p>
 <p>郑微这个角色实在是，太极品了。尽管从讨厌到喜欢，也是人生当中可能存在的一种现实。但是像郑微这样，如此的深恶痛绝，到后面的喜欢，我以为过渡得有点不自然。我还没怎么觉察，靠，郑微居然爱上了人家陈孝正。凭什么啊？陈孝正真的和她不是一路人啊。</p>
@@ -1260,24 +1272,25 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
-	</div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
+    </div>
+
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/life/Ŀ¼/影评/">影评</a>
-	</div>
-
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/影评/">影评</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1290,7 +1303,7 @@
   
     <div class="article-meta">
       <a href="/life/2013/06/23/西藏之旅——林芝/" class="article-date">
-  	<time datetime="2013-06-23T14:13:34.000Z" itemprop="datePublished">2013-06-23</time>
+      <time datetime="2013-06-23T14:13:34.000Z" itemprop="datePublished">2013-06-23</time>
 </a>
     </div>
   
@@ -1303,10 +1316,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2013/06/23/西藏之旅——林芝/">
-        西藏之旅——林芝
-        
-      </a>
+      <a class="article-title" href="/life/2013/06/23/西藏之旅——林芝/">西藏之旅——林芝</a>
     </h1>
   
 
@@ -1315,6 +1325,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>次日要很早就起来，林芝很远。我到前台的时候，发现夔也在。原来夔也改变主意，决定参加我们的林芝团了。结果证明他做出了一个非常正确的决定。我们把行李收拾好，巧把氧气瓶之类的拿去寄存。我们退完房，出门去找汽车。</p>
 <p>是一辆丰田的SUV，land cruiser。夔坐在副驾上，我和巧，还有他朋友坐在后面。我们还开玩笑说别是上错车了。因为可能会有很多人都是这样租车旅行的。”要不要对一下暗号？“”天王盖地虎“”宝塔镇河妖“。</p>
 <p>我们上了车，走了一段才去吃早饭。一坐下，我们啥都没点，老板便端来了一碗稀粥，我们再点上包子鸡蛋之类的。饭毕，我们四个人好像才花了26块钱。（不知道是不是我记忆出问题了。。）夔问买水了没有，我们然后又买了几瓶水上车。</p>
@@ -1363,20 +1374,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1389,7 +1401,7 @@
   
     <div class="article-meta">
       <a href="/life/2013/06/23/西藏之旅之始端——艰难的开始/" class="article-date">
-  	<time datetime="2013-06-23T13:13:13.000Z" itemprop="datePublished">2013-06-23</time>
+      <time datetime="2013-06-23T13:13:13.000Z" itemprop="datePublished">2013-06-23</time>
 </a>
     </div>
   
@@ -1402,10 +1414,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2013/06/23/西藏之旅之始端——艰难的开始/">
-        西藏之旅之始端——艰难的开始
-        
-      </a>
+      <a class="article-title" href="/life/2013/06/23/西藏之旅之始端——艰难的开始/">西藏之旅之始端——艰难的开始</a>
     </h1>
   
 
@@ -1414,6 +1423,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <p>想去西藏已经很久了。原本我们同学间去年就计划着去了，但是拖延症一来，直到今年才真正成行。原本希望在西藏搞一个十周年同学聚会，不过到底还是太难。来西藏的同学一共九个。耗子和蓉蓉两夫妻，靖猪和肖琦两夫妇、寇、巧、夔和我。还有前番来过的佳媚及超。</p>
 <p>我一直觉得，西藏之旅一定要记录下文字，这里的经历，有太多值得记录的了。有和内地太不一样的感受。风景自然很好，可以用相片记录，但这里的感受，却非文字不能保存。我不由想起了钱老师送别梁岩和德杰时的泪如雨下。</p>
 <p>西藏的风景美得令人发颤，美得让我觉得相机都无法记录下着一切美景。我们一般都觉得相机拍的要比实景更美，但是在西藏，我却以为相机远远无法把真实的美丽的西藏记录下来。蓝天、雪山，这一切的风景都是那么令人心旷神怡。当然，除了风景以外，我觉得最不虚此行的是认识了这一帮在西藏支教的师弟师妹们。是他们，让我们的西藏之行变得更加丰富多彩，也让此行变得更加难忘。</p>
@@ -1457,20 +1467,21 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/游记/">游记</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
 </article>
+
+
 
 
 
@@ -1483,7 +1494,7 @@
   
     <div class="article-meta">
       <a href="/life/2009/10/10/浙江游记/" class="article-date">
-  	<time datetime="2009-10-10T03:08:05.000Z" itemprop="datePublished">2009-10-10</time>
+      <time datetime="2009-10-10T03:08:05.000Z" itemprop="datePublished">2009-10-10</time>
 </a>
     </div>
   
@@ -1496,10 +1507,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/life/2009/10/10/浙江游记/">
-        浙江游记
-        
-      </a>
+      <a class="article-title" href="/life/2009/10/10/浙江游记/">浙江游记</a>
     </h1>
   
 
@@ -1508,6 +1516,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+          
         <h1 id="路途"><a href="#路途" class="headerlink" title="路途"></a>路途</h1><p>9月30日上午，彭小贵打来电话告诉我由于要去接一个朋友，要提前走。于是下午请过假之后，我便离开了办公室。</p>
 <p>回到家后，不过主要整理了一些衣物。因为此趟出门，我可能要在浙江呆上5，6日。衣服肯定是要带足的。但我放弃了带箱子的打算，最后还是用上了那个蓝色的背包。上次去北京的时候带上旅行箱还给吴杰嘲笑了半天：不过出来旅行，带那么大的箱子做什么？想来去浙江也没什么重要的事情，毋须带太多的物件。</p>
 <p>接上我之后，小贵开车去了机场，接上一名客人车子便向浙江驶去。一路上我无聊得玩弄着手机：准备了两个电池，所以并不担心手机没电的问题。不知道走到何处，我觉得无聊，便给大家出起了一些白烂的题目：其实就是吴宗宪的那些题目。</p>
@@ -1631,16 +1640,15 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
-	</div>
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/life/tags/回忆录/">回忆录</a></li></ul>
+    </div>
 
       
       <div class="clearfix"></div>
     </div>
-      
     
   </div>
   
@@ -1652,61 +1660,103 @@
 
 
 
+
+
   
   
 </div>
       <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-      <div class="footer-left">
-        &copy; 2016 Andy Tong
-      </div>
-        <div class="footer-right">
-          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/winnerweb/hexo-Yilia-Smackdown" target="_blank">Yilia(Smackdown)</a>
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 Andy Tong
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
         </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
     </div>
-  </div>
 </footer>
+
     </div>
-    
-  <link rel="stylesheet" href="/life/fancybox/jquery.fancybox.css">
-
-
-<script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: true,
-		isPost: false,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false
-	}
-</script>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 <script src="/life/js/main.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/life/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
 
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
 
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
 </script>
 
-<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
 
 
   </div>
